@@ -6,9 +6,9 @@
 <meta name="description" content="{{ metadata.description }}" />
 
 <link rel="stylesheet" href="{% asset_path css %}" />
-<link rel="icon" href="/favicon.ico" sizes="32x32">
-<link rel="icon" href="/icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
-<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="{{ "/favicon.ico" | relative_url }}" sizes="32x32">
+<link rel="icon" href="{{ "/icon.svg" | relative_url }}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ "/apple-touch-icon.png" | relative_url }}"><!-- 180×180 -->
+<link rel="manifest" href="{{ "/manifest.webmanifest" | relative_url }}">
 <script src="{% asset_path js %}" defer></script>
 {% live_reload_dev_js %}
