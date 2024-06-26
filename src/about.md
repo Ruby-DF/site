@@ -1,10 +1,14 @@
 ---
 layout: page
-title: About
+title: Sobre nós
 ---
 
-This is the basic Bridgetown site template. You can find out more info about customizing your Bridgetown site, as well as basic Bridgetown usage documentation at [bridgetownrb.com](https://bridgetownrb.com/)
+Ruby DF é o meetup de Ruby no Distrito Federal. Nosso objetivo é reunir a comunidade Ruby do DF e entorno para compartilhar conhecimento, experiências e fazer networking.
 
-You can find the source code for Bridgetown at GitHub:
-[bridgetownrb](https://github.com/bridgetownrb) /
-[bridgetown](https://github.com/bridgetownrb/bridgetown)
+## Patrocínio
+
+Se você ou sua empresa tem interesse em patrocinar o Ruby DF, entre em contato conosco pelo email <hello@rubydf.com> para mais informações em como ajudar e os benefícios de ser um patrocinador.
+
+## Organização
+
+Atualmente, o Ruby DF é organizado por [Matheus Richard](https://twitter.com/matheusrich) e acontece por volta de uma vez por trimestre.

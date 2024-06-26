@@ -32,7 +32,7 @@ const build = require("./config/esbuild.defaults.js")
  * @type {BuildOptions}
  */
 const esbuildOptions = {
-  publicPath: "/site/_bridgetown/static",
+  publicPath: "/_bridgetown/static",
   plugins: [
     // add new plugins here...
   ],
