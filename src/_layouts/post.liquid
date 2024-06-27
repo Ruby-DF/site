@@ -5,3 +5,11 @@ layout: default
 <h1>{{ data.title }}</h1>
 
 {{ content }}
+
+{% if resource.next %}
+  <a href="{{ resource.next.url }}">Next: {{ resource.next.title }}</a>
+{% endif %}
+
+{% if resource.previous %}
+  <a href="{{ resource.previous.url }}">Previous: {{ resource.previous.title }}</a>
+{% endif %}

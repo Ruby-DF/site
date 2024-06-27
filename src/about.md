@@ -7,7 +7,9 @@ Ruby DF é o meetup de Ruby no Distrito Federal. Nosso objetivo é reunir a comu
 
 ## Patrocínio
 
-Se você ou sua empresa tem interesse em patrocinar o Ruby DF, entre em contato conosco pelo email <{{ site.metadata.email }}> para mais informações em como ajudar e os benefícios de ser um patrocinador.
+Se você ou sua empresa tem interesse em patrocinar o Ruby DF, veja [como você
+pode ajudar](/sponsoring#como-você-pode-ajudar) e os [benefícios](/sponsoring#o-que-podemos-oferecer) de ser um patrocinador [aqui](/sponsoring). Se preferir, entre em
+contato conosco pelo email <{{ site.metadata.email }}> para mais informações.
 
 ## Organização
 

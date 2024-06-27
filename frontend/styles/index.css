@@ -101,7 +101,6 @@ hr {
 .block { display: block; }
 .list-roman { list-style-type: upper-roman; }
 .mx-auto { margin-left: auto; margin-right: auto; }
-.object-cover { object-fit: cover; }
-.rounded-full { border-radius: 9999px; }
-.size-80 { width: 20rem; height: 20rem; }
+.rounded-lg { border-radius: 0.5rem; }
+.max-h-80 { max-height: 20rem; }
 .w-fit { width: fit-content; }

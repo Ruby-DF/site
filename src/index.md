@@ -8,8 +8,10 @@ Ruby DF é o meetup de Ruby no Distrito Federal. Nosso objetivo é reunir a comu
 
 ---
 
-## Próximo evento
-
-**Em breve**
+## Próximo evento: em breve!
 
 Estamos preparando o próximo evento. Fique ligado nas [nossas redes sociais](t.me/rubydf) para mais informações.
+
+Enquanto isso, você pode conferir um pouco sobre as [edições passadas aqui](/events).
+
+Se quiser ajudar a organizar o próximo evento, dê uma olhada em [como você pode contribuir](/sponsoring).

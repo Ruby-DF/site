@@ -27,11 +27,11 @@ Nosso meetup é muito recente e totalmente gratuito, então não temos um espaç
 fixo para os eventos. Por isso, se você ou sua empresa puderem nos ajudar com
 algum dos itens abaixo, ficaríamos muito gratos!
 
-- **Espaço para o evento**: um local com capacidade para 30-50 pessoas, com
+- **🎤 Espaço para o evento**: um local com capacidade para 20-40 pessoas, com
   projetor/tela e internet. Pode ser o seu escritório, um coworking ou outro
-  espaço que você conheça;
-- **Comida e bebida**: um coffee break ou lanche para os participantes;
-- **Dinheiro**: se preferir, pode nos ajudar com uma doação em dinheiro para
+  espaço que você conheça. Uma das nossas opções custa em torno de R$ 300,00/turno;
+- **🍩 Comida e bebida**: um coffee break ou lanche para os participantes;
+- **💰 Dinheiro**: se preferir, pode nos ajudar com uma doação em dinheiro para
   cobrir custos de locação de espaço.
 
 ## O que podemos oferecer
@@ -47,9 +47,8 @@ Como forma de agradecimento, oferecemos alguns benefícios para nossos patrocina
 
 ## Contato
 
-Agradecemos novamente pelo seu interesse em ajudar o Ruby DF. Entre em contato
+Agradecemos novamente pelo seu interesse em ajudar o Ruby DF! Entre em contato
 conosco pelo email <{{ site.metadata.email }}> para acertarmos todos os
-detalhes!
+detalhes.
 
-<img class="block object-cover rounded-full size-80 mx-auto" src="{{ '/images/events/2023-10.jpg' | relative_url }}" alt="Meetup attendees" alt="The Ruby DF community at a meetup">
-<img class="block object-cover rounded-full size-80 mx-auto" src="{{ '/images/events/2024-02.jpg' | relative_url }}" alt="Meetup attendees" alt="The Ruby DF community at a meetup">
+<img class="block rounded-lg max-h-80 mx-auto" src="{{ '/images/events/2024-02.jpg' | relative_url }}" alt="Meetup attendees" alt="The Ruby DF community at a meetup">
