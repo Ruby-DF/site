@@ -56,15 +56,20 @@ body > nav ul {
   gap: 1.5rem;
   font-size: 1.3rem;
   font-weight: bold;
+  text-align: center;
 }
 
 body > nav a {
   text-decoration: none;
 }
+body > nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
 
 main {
   margin: 2rem auto 4rem;
-  max-width: 65rem;
+  max-width: 55rem;
   padding: 25px 25px 50px;
   background: white;
   box-shadow: 2px 3px 3px #ddd;
@@ -86,3 +91,17 @@ hr {
   border-top: 2px dotted #bbb;
   margin: 3rem 0;
 }
+
+.sponsors {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.block { display: block; }
+.list-roman { list-style-type: upper-roman; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.object-cover { object-fit: cover; }
+.rounded-full { border-radius: 9999px; }
+.size-80 { width: 20rem; height: 20rem; }
+.w-fit { width: fit-content; }

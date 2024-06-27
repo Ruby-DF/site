@@ -3,11 +3,10 @@ layout: page
 title: Histórico de eventos
 ---
 
-<ul>
-  <!-- em ordem reversa: mais novos primeiro -->
-  {% for post in collections.posts.resources | reverse %}
+<ol class="list-roman mx-auto w-fit" reversed>
+  {% for post in collections.posts.resources %}
     <li>
       <a href="{{ post.relative_url }}">{{ post.data.title }}</a>
     </li>
   {% endfor %}
-</ul>
+</ol>

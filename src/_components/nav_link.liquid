@@ -1,0 +1,8 @@
+{% assign current_page_url = current_url | remove_last: "/" %}
+
+{% if current_page_url == href %}
+  {% assign aria_current = "page" %}
+{% else %}
+  {% assign aria_current = nil %}
+{% endif %}
+<a aria-current="{{ aria_current }}" href="{{ href | relative_url }}">{{ label }}</a>

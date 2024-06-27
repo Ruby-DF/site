@@ -6,8 +6,8 @@
 
 <nav>
   <ul>
-    <li><a href="{{ '/' | relative_url }}">Home</a></li>
-    <li><a href="{{ '/events' | relative_url }}">Eventos</a></li>
-    <li><a href="{{ '/about' | relative_url }}">Sobre nós</a></li>
+    <li>{% render "nav_link", current_url: resource.relative_url, href: "/events", label: "Eventos" %}</li>
+    <li>{% render "nav_link", current_url: resource.relative_url, href: "/sponsoring", label: "Patrocínio" %}</li>
+    <li>{% render "nav_link", current_url: resource.relative_url, href: "/about", label: "Sobre nós" %}</li>
   </ul>
 </nav>
