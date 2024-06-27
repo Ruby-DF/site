@@ -6,10 +6,12 @@ layout: default
 
 {{ content }}
 
-{% if resource.next %}
-  <a href="{{ resource.next.url }}">Next: {{ resource.next.title }}</a>
-{% endif %}
+<div class="flex gap-4 flex-wrap">
+  {% if resource.next %}
+    <a class="mr-auto" href="{{ resource.next.relative_url }}">Anterior: {{ resource.next.title }}</a>
+  {% endif %}
 
-{% if resource.previous %}
-  <a href="{{ resource.previous.url }}">Previous: {{ resource.previous.title }}</a>
-{% endif %}
+  {% if resource.previous != nil %}
+    <a class="ml-auto" href="{{ resource.previous.relative_url }}">Próximo: {{ resource.previous.title }}</a>
+  {% endif %}
+</div>

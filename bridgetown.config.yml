@@ -19,7 +19,7 @@
 
 url: "" # the base hostname & protocol for your site, e.g. https://example.com
 
-permalink: pretty
+permalink: /events/:slug/
 template_engine: liquid
 available_locales: [pt-BR]
 default_locale: pt-BR

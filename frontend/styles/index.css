@@ -110,3 +110,8 @@ hr {
 .rounded-lg { border-radius: 0.5rem; }
 .max-h-80 { max-height: 20rem; }
 .w-fit { width: fit-content; }
+.flex { display: flex; }
+.ml-auto { margin-left: auto; }
+.mr-auto { margin-right: auto; }
+.gap-4 { gap: 1rem; }
+.flex-wrap { flex-wrap: wrap; }
