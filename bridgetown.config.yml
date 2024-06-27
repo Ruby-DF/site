@@ -19,7 +19,7 @@
 
 url: "" # the base hostname & protocol for your site, e.g. https://example.com
 
-permalink: /events/:slug/
+permalink: pretty
 template_engine: liquid
 available_locales: [pt-BR]
 default_locale: pt-BR
@@ -34,3 +34,10 @@ base_path: "/" # the subpath of your site, e.g. /blog. If you set this option,
 timezone: America/Sao_Paulo
 # pagination:
 #   enabled: true
+
+collections:
+  events:
+    output: true
+    permalink: /events/:slug/
+    sort_by: order
+    sort_direction: descending

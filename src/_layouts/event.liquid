@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<h1>{{ data.title }}</h1>
+
+Meetup realizado em {{ data.date | date: "%d/%m/%Y" }} com {{ data.attendees }} participantes.
+
+<h2 id="talks">Talks</h2>
+
+<ol>
+  {% for talk in data.talks %}
+    <li>
+      <strong>{{ talk.title }}</strong> por
+      {% if talk.speaker.link %}
+        <a href="{{ talk.speaker.link }}" target="_blank">{{ talk.speaker.name }}</a>
+      {% else %}
+        {{ talk.speaker.name }}
+      {% endif %}
+      {% if talk.slides %}
+        | <a href="{{ talk.slides }}" target="_blank">Slides</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ol>
+
+<h2 id="patrocinadores">Patrocinadores</h2>
+<div class="sponsors">
+  {% for sponsor in data.sponsors %}
+    <a href="{{ sponsor.link }}" target="_blank">
+      <img width=200 src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.name }} logo" />
+    </a>
+  {% endfor %}
+</div>
+
+<h2 id="local">Local</h2>
+<p>{{ data.location }}</p>
+
+<img src="{{ data.picture | relative_url }}" alt="Meetup attendees" />
+
+<div class="flex gap-4 flex-wrap">
+  {% if resource.next %}
+    <a class="mr-auto" href="{{ resource.next.relative_url }}">Anterior: {{ resource.next.title }}</a>
+  {% endif %}
+
+  {% if resource.previous != nil %}
+    <a class="ml-auto" href="{{ resource.previous.relative_url }}">Próximo: {{ resource.previous.title }}</a>
+  {% endif %}
+</div>

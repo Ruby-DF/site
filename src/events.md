@@ -4,9 +4,9 @@ title: Histórico de eventos
 ---
 
 <ol class="list-roman mx-auto w-fit" reversed>
-  {% for post in collections.posts.resources %}
+  {% for event in collections.events.resources %}
     <li>
-      <a href="{{ post.relative_url }}">{{ post.data.title }}</a>
+      <a href="{{ event.relative_url }}">{{ event.data.title }}</a>
     </li>
   {% endfor %}
 </ol>
