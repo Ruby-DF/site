@@ -1,4 +1,8 @@
-{% assign current_page_url = current_url | remove_last: "/" %}
+{% if current_url == "/" %}
+  {% assign current_page_url = current_url %}
+{% else %}
+  {% assign current_page_url = current_url | remove_last: "/" %}
+{% endif %}
 
 {% if current_page_url == href %}
   {% assign aria_current = "page" %}

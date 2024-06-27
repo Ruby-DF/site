@@ -1,6 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-
 layout: default
 ---
 
@@ -30,3 +28,14 @@ Se quiser ajudar na organização, dê uma olhada em [como você pode contribuir
 
 {% endif %}
 
+---
+
+## Patrocínio
+
+Se você ou sua empresa tem interesse em patrocinar o Ruby DF, veja [como você
+pode ajudar](/sponsoring#como-você-pode-ajudar) e os [benefícios](/sponsoring#o-que-podemos-oferecer) de ser um patrocinador [aqui](/sponsoring). Se preferir, entre em
+contato conosco pelo email <{{ site.metadata.email }}> para mais informações.
+
+## Organização
+
+Atualmente, o Ruby DF é organizado por [Matheus Richard](https://twitter.com/matheusrich) e acontece por volta de uma vez por trimestre.
