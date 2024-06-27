@@ -62,9 +62,15 @@ body > nav ul {
 body > nav a {
   text-decoration: none;
 }
-body > nav a[aria-current="page"] {
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
+
+body > nav a[aria-current="page"]::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background: var(--action-color);
+  border-radius: 50%;
+  margin: 0 auto;
 }
 
 main {
