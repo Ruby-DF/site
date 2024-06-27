@@ -41,3 +41,4 @@ collections:
     permalink: /events/:slug/
     sort_by: order
     sort_direction: descending
+    future: true

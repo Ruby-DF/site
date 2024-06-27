@@ -4,7 +4,12 @@ layout: default
 
 <h1>{{ data.title }}</h1>
 
-Meetup realizado em {{ data.date | date: "%d/%m/%Y" }} com {{ data.attendees }} participantes.
+{% if data.date < now %}
+  O meetup foi realizado em {{ data.date | date: "%d/%m/%Y" }} com {{ data.attendees }} participantes.
+{% else %}
+  O meetup será realizado em {{ data.date | date: "%d/%m/%Y" }} às {{ data.date | date: "%H:%M" }}.
+{% endif %}
+
 
 <h2 id="talks">Talks</h2>
 
@@ -36,14 +41,16 @@ Meetup realizado em {{ data.date | date: "%d/%m/%Y" }} com {{ data.attendees }} 
 <h2 id="local">Local</h2>
 <p>{{ data.location }}</p>
 
-<img src="{{ data.picture | relative_url }}" alt="Meetup attendees" />
+{% if data.picture %}
+  <img src="{{ data.picture | relative_url }}" alt="Meetup attendees" />
+{% endif %}
 
 <div class="flex gap-4 flex-wrap">
   {% if resource.next %}
     <a class="mr-auto" href="{{ resource.next.relative_url }}">Anterior: {{ resource.next.title }}</a>
   {% endif %}
 
-  {% if resource.previous != nil %}
+  {% if resource.previous != nil and resource.previous.date < now %}
     <a class="ml-auto" href="{{ resource.previous.relative_url }}">Próximo: {{ resource.previous.title }}</a>
   {% endif %}
 </div>
