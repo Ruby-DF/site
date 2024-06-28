@@ -32,8 +32,18 @@ layout: default
             <p class="font-bold">{{ talk.speaker.name }}</p>
           {% endif %}
 
-          {% if talk.speaker.bio %}
-            <p class="m-0">{{ talk.speaker.bio }}</p>
+          {% if talk.speaker.bio or talk.slides %}
+            <p class="m-0">
+              {{ talk.speaker.bio }}
+
+              {% if talk.speaker.bio and talk.slides %}
+                |
+              {% endif %}
+
+              {% if talk.slides %}
+                <a href="{{ talk.slides }}" target="_blank">Slides</a>
+              {% endif %}
+            </p>
           {% endif %}
         </div>
       </div>
