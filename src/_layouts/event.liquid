@@ -15,16 +15,28 @@ layout: default
 
 <ol>
   {% for talk in data.talks %}
-    <li>
-      <strong>{{ talk.title }}</strong> por
-      {% if talk.speaker.link %}
-        <a href="{{ talk.speaker.link }}" target="_blank">{{ talk.speaker.name }}</a>
-      {% else %}
-        {{ talk.speaker.name }}
-      {% endif %}
-      {% if talk.slides %}
-        | <a href="{{ talk.slides }}" target="_blank">Slides</a>
-      {% endif %}
+    <li class="list-roman">
+      <h3>{{ talk.title }}</h3>
+      <div class="flex gap-4 items-center">
+        {% if talk.speaker.picture %}
+          {% assign speaker_picture = talk.speaker.picture %}
+        {% else %}
+          {% assign speaker_picture = '/images/default-avatar.webp' %}
+        {% endif %}
+
+        <img class="rounded-full" src="{{ speaker_picture | relative_url }}" alt="{{ talk.speaker.name }} picture" height=50 width=50 />
+        <div>
+          {% if talk.speaker.link %}
+            <a class="decoration-none font-bold" href="{{ talk.speaker.link }}" target="_blank">{{ talk.speaker.name }}</a>
+          {% else %}
+            <p class="font-bold">{{ talk.speaker.name }}</p>
+          {% endif %}
+
+          {% if talk.speaker.bio %}
+            <p class="m-0">{{ talk.speaker.bio }}</p>
+          {% endif %}
+        </div>
+      </div>
     </li>
   {% endfor %}
 </ol>
@@ -50,7 +62,7 @@ layout: default
     <a class="mr-auto" href="{{ resource.next.relative_url }}">Anterior: {{ resource.next.title }}</a>
   {% endif %}
 
-  {% if resource.previous != nil and resource.previous.date < now %}
+  {% if resource.previous != nil and resource.previous.date < site.time %}
     <a class="ml-auto" href="{{ resource.previous.relative_url }}">Próximo: {{ resource.previous.title }}</a>
   {% endif %}
 </div>

@@ -11,10 +11,13 @@ talks:
   - title: "Riding the Rails of Magic: The journey between request and response"
     speaker:
       name: Alexandre Calaça
+      picture: /images/speakers/alexandre_calaça.jpg
       link: blog.alexandrecalaca.com
   - title: "Segurança em primeiro lugar: Como construir a Camada de autorização para sua aplicação Rails"
     speaker:
       name: Pedro Augusto Ramalho Duarte
+      picture: /images/speakers/pedro_augusto_ramalho_duarte.jpg
+      bio: CTO @ SwitchDreams
       link: twitter.com/pedroarduarte
 sponsors:
   - name: thoughtbot
