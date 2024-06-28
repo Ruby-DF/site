@@ -1,0 +1,37 @@
+<ol>
+  {% for talk in talks %}
+    <li class="list-roman">
+      <h3>{{ talk.title }}</h3>
+      <div class="flex gap-4 items-center">
+        {% if talk.speaker.picture %}
+          {% assign speaker_picture = talk.speaker.picture %}
+        {% else %}
+          {% assign speaker_picture = '/images/default-avatar.webp' %}
+        {% endif %}
+
+        <img class="rounded-full" src="{{ speaker_picture | relative_url }}" alt="{{ talk.speaker.name }} picture" height=50 width=50 />
+        <div>
+          {% if talk.speaker.link %}
+            <a class="decoration-none font-bold" href="{{ talk.speaker.link }}" target="_blank">{{ talk.speaker.name }}</a>
+          {% else %}
+            <p class="font-bold">{{ talk.speaker.name }}</p>
+          {% endif %}
+
+          {% if talk.speaker.bio or talk.slides %}
+            <p class="m-0">
+              {{ talk.speaker.bio }}
+
+              {% if talk.speaker.bio and talk.slides %}
+                |
+              {% endif %}
+
+              {% if talk.slides %}
+                <a href="{{ talk.slides }}" target="_blank">Slides</a>
+              {% endif %}
+            </p>
+          {% endif %}
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ol>

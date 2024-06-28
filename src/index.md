@@ -13,7 +13,7 @@ Ruby DF é o meetup de Ruby no Distrito Federal. Nosso objetivo é reunir a comu
 <div>
   <h2>🎉 Faltam {% render "days_until", date: nearest_future_event.date %} dias para o próximo meetup!</h2>
 
-  <p>Para mais informações, acesse <a href="{{ nearest_future_event.relative_url }}">a página do evento</a>.</p>
+  {% render "event_description", event: nearest_future_event %}
 </div>
 
 {% else %}
@@ -38,4 +38,4 @@ contato conosco pelo email <{{ site.metadata.email }}> para mais informações.
 
 ## Organização
 
-Atualmente, o Ruby DF é organizado por [Matheus Richard](https://twitter.com/matheusrich) e acontece por volta de uma vez por trimestre.
+Atualmente, o Ruby DF é organizado por [Matheus Richard](https://twitter.com/matheusrich) e acontece por volta de uma vez por quadrimestre.

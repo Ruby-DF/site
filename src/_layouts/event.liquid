@@ -4,68 +4,10 @@ layout: default
 
 <h1>{{ data.title }}</h1>
 
-{% if data.date < now %}
-  O meetup foi realizado em {{ data.date | date: "%d/%m/%Y" }} com {{ data.attendees }} participantes.
-{% else %}
-  O meetup será realizado em {{ data.date | date: "%d/%m/%Y" }} às {{ data.date | date: "%H:%M" }}.
-{% endif %}
+{% render "event_description", event: data %}
 
-
-<h2 id="talks">Talks</h2>
-
-<ol>
-  {% for talk in data.talks %}
-    <li class="list-roman">
-      <h3>{{ talk.title }}</h3>
-      <div class="flex gap-4 items-center">
-        {% if talk.speaker.picture %}
-          {% assign speaker_picture = talk.speaker.picture %}
-        {% else %}
-          {% assign speaker_picture = '/images/default-avatar.webp' %}
-        {% endif %}
-
-        <img class="rounded-full" src="{{ speaker_picture | relative_url }}" alt="{{ talk.speaker.name }} picture" height=50 width=50 />
-        <div>
-          {% if talk.speaker.link %}
-            <a class="decoration-none font-bold" href="{{ talk.speaker.link }}" target="_blank">{{ talk.speaker.name }}</a>
-          {% else %}
-            <p class="font-bold">{{ talk.speaker.name }}</p>
-          {% endif %}
-
-          {% if talk.speaker.bio or talk.slides %}
-            <p class="m-0">
-              {{ talk.speaker.bio }}
-
-              {% if talk.speaker.bio and talk.slides %}
-                |
-              {% endif %}
-
-              {% if talk.slides %}
-                <a href="{{ talk.slides }}" target="_blank">Slides</a>
-              {% endif %}
-            </p>
-          {% endif %}
-        </div>
-      </div>
-    </li>
-  {% endfor %}
-</ol>
-
-<h2 id="patrocinadores">Patrocinadores</h2>
-<div class="sponsors">
-  {% for sponsor in data.sponsors %}
-    <a href="{{ sponsor.link }}" target="_blank">
-      <img width=200 src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.name }} logo" />
-    </a>
-  {% endfor %}
-</div>
-
-<h2 id="local">Local</h2>
-<p>{{ data.location }}</p>
-
-{% if data.picture %}
-  <img src="{{ data.picture | relative_url }}" alt="Meetup attendees" />
-{% endif %}
+<br>
+<br>
 
 <div class="flex gap-4 flex-wrap">
   {% if resource.next %}

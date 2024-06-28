@@ -1,0 +1,30 @@
+{% if event.date < now %}
+  O evento foi realizado em {{ event.date | date: "%d/%m/%Y" }} com {{ event.attendees }} participantes.
+{% else %}
+  O evento será realizado em {{ event.date | date: "%d/%m/%Y" }} às {{ event.date | date: "%H:%M" }}.
+{% endif %}
+
+
+<h2 id="talks">Talks</h2>
+
+{% render "talk_list", talks: event.talks %}
+
+<h2 id="patrocinadores">Patrocinadores</h2>
+<div class="sponsors">
+  {% for sponsor in event.sponsors %}
+    <a href="{{ sponsor.link }}" target="_blank">
+      <img width=200 src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.name }} logo" />
+    </a>
+  {% endfor %}
+</div>
+
+<h2 id="local">Local</h2>
+{% if event.location.link %}
+  <a href="{{ event.location.link }}" target="_blank">{{ event.location.address }}</a>
+{% else %}
+  <p>{{ event.location.address }}</p>
+{% endif %}
+
+{% if event.picture %}
+  <img src="{{ event.picture | relative_url }}" alt="Meetup attendees" />
+{% endif %}
