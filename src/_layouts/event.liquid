@@ -11,10 +11,10 @@ layout: default
 
 <div class="flex gap-4 flex-wrap">
   {% if resource.next %}
-    <a class="mr-auto" href="{{ resource.next.relative_url }}">Anterior: {{ resource.next.title }}</a>
+    <a class="button decoration-none mr-auto" href="{{ resource.next.relative_url }}">Evento anterior</a>
   {% endif %}
 
   {% if resource.previous != nil and resource.previous.date < site.time %}
-    <a class="ml-auto" href="{{ resource.previous.relative_url }}">Próximo: {{ resource.previous.title }}</a>
+    <a class="button decoration-none ml-auto" href="{{ resource.previous.relative_url }}">Próximo evento</a>
   {% endif %}
 </div>

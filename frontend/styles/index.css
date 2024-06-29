@@ -1,8 +1,15 @@
 :root {
+  --primary-color: #d30000;
+  --primary-color-light: var(--primary-color);
+  --primary-color-lighter: #ffe6e6;
+
   --body-background: #f2f2f2;
   --body-color: #444;
   --heading-color: black;
-  --action-color: #d30000;
+  --action-color: var(--primary-color);
+
+  --button-background: var(--primary-color-lighter);
+  --button-border-color: var(--primary-color);
 }
 
 body {
@@ -104,6 +111,50 @@ hr {
   align-items: center;
 }
 
+.button {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--button-border-color);
+  border-radius: 9999px;
+  font-weight: 700;
+  color: var(--button-border-color);
+  text-transform: uppercase;
+  background: var(--button-background);
+  transform-style: preserve-3d;
+  transition: .15s cubic-bezier(0, 0, .6, 1);
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--button-border-color);
+  box-shadow: 0 0 0 2px var(--button-border-color);
+  transform: translate3d(0, .4em, -1em);
+  transition: .15s cubic-bezier(0, 0, .6, 1);
+}
+
+.button:hover {
+  transform: translate(0, .15em);
+}
+
+.button:hover::before {
+  transform: translate3d(0, .25em, -1em);
+}
+
+.button:active {
+  transform: translate(0, .4em);
+}
+
+.button:active::before {
+  transform: translate3d(0, 0, -1em);
+}
+
 .block { display: block; }
 .flex { display: flex; }
 .flex-wrap { flex-wrap: wrap; }
@@ -120,4 +171,5 @@ hr {
 .p-0 { padding: 0; }
 .rounded-full { border-radius: 9999px; }
 .rounded-lg { border-radius: 0.5rem; }
+.rounded-2xl { border-radius: 1rem; }
 .w-fit { width: fit-content; }

@@ -12,7 +12,7 @@
         <img class="rounded-full" src="{{ speaker_picture | relative_url }}" alt="{{ talk.speaker.name }} picture" height=50 width=50 />
         <div>
           {% if talk.speaker.link %}
-            <a class="decoration-none font-bold" href="{{ talk.speaker.link }}" target="_blank">{{ talk.speaker.name }}</a>
+            <a class="font-bold" href="{{ talk.speaker.link }}" target="_blank">{{ talk.speaker.name }}</a>
           {% else %}
             <p class="font-bold">{{ talk.speaker.name }}</p>
           {% endif %}
