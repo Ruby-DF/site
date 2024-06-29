@@ -22,7 +22,7 @@ talks:
 sponsors:
   - name: thoughtbot
     logo: /images/sponsors/thoughtbot.svg
-    link: http://thoughtbot.com
+    link: https://thoughtbot.com
   - name: Switch Dreams
     logo: /images/sponsors/switchdreams.png
     link: https://switchdreams.com.br/
