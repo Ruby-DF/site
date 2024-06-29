@@ -1,7 +1,9 @@
 :root {
   --primary-color: #d30000;
-  --primary-color-light: var(--primary-color);
   --primary-color-lighter: #ffe6e6;
+
+  --pink: #D3006A;
+  --pink-lighter: #ffe6f3;
 
   --body-background: #f2f2f2;
   --body-color: #444;
@@ -93,6 +95,12 @@ main {
   }
 }
 
+main.fun {
+  border: 2px solid var(--primary-color);
+  border-radius: 1rem;
+  box-shadow: 2px 4px 0 var(--primary-color);
+}
+
 footer {
   text-align: center;
   margin-bottom: 4rem;
@@ -168,9 +176,9 @@ figcaption {
 }
 
 .note {
-  border-left: 4px solid var(--body-color);
+  border-left: 4px solid var(--pink);
   padding: 0.1rem 1rem;
-  background: var(--body-background);
+  background: var(--pink-lighter);
 }
 
 .block { display: block; }
