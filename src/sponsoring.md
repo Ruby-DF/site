@@ -51,4 +51,7 @@ Agradecemos novamente pelo seu interesse em ajudar o Ruby DF! Entre em contato
 conosco pelo email <{{ site.metadata.email }}> para acertarmos todos os
 detalhes.
 
-<img class="block rounded-lg max-h-80 mx-auto" src="{{ '/images/events/2024-02.jpg' | relative_url }}" alt="Meetup attendees" alt="The Ruby DF community at a meetup">
+<figure>
+  <img class="block rounded-lg max-h-80 mx-auto" src="{{ '/images/events/2024-02.jpg' | relative_url }}" alt="Meetup attendees" alt="The Ruby DF community at a meetup">
+  <figcaption class="text-center text-sm text-gray-600">A comunidade Ruby DF agradece sua ajuda!</figcaption>
+</figure>
