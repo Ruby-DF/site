@@ -1,9 +1,10 @@
-{% if event.date < now %}
-  O evento foi realizado em {{ event.date | date: "%d/%m/%Y" }} com {{ event.attendees }} participantes.
-{% else %}
-  O evento será realizado em {{ event.date | date: "%d/%m/%Y" }} às {{ event.date | date: "%H:%M" }}.
-{% endif %}
-
+<p>
+  {% if event.date <= site.time %}
+    O evento foi realizado em {{ event.date | date: "%d/%m/%Y" }} com {{ event.attendees }} participantes.
+  {% else %}
+    O evento será realizado em {{ event.date | date: "%d/%m/%Y" }} às {{ event.date | date: "%H:%M" }}.
+  {% endif %}
+</p>
 
 <h2 id="talks">Talks</h2>
 
@@ -26,5 +27,5 @@
 {% endif %}
 
 {% if event.picture %}
-  <img src="{{ event.picture | relative_url }}" alt="Meetup attendees" />
+  <img class="rounded-2xl" src="{{ event.picture | relative_url }}" alt="Meetup attendees" />
 {% endif %}

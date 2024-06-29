@@ -26,7 +26,8 @@ sponsors:
   - name: Switch Dreams
     logo: /images/sponsors/switchdreams.png
     link: https://switchdreams.com.br/
-location: Universidade de Brasília - Faculdade de Tecnologia
+location:
+  address: Universidade de Brasília - Faculdade de Tecnologia
 attendees: 25
 categories: event
 ---
