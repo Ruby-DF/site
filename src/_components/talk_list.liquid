@@ -21,11 +21,11 @@
             <p class="m-0">
               {{ talk.speaker.bio }}
 
-              {% if talk.speaker.bio and talk.slides %}
+              {% if talk.speaker.bio and talk.slides and event_date <= site.time %}
                 |
               {% endif %}
 
-              {% if talk.slides %}
+              {% if talk.slides and event_date <= site.time %}
                 <a href="{{ talk.slides }}" target="_blank">Slides</a>
               {% endif %}
             </p>

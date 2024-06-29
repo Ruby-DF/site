@@ -16,7 +16,7 @@
 {% else %}
   {% assign cfp_link = false %}
 {% endif %}
-{% render "talk_list", talks: event.talks, cfp_link: cfp_link %}
+{% render "talk_list", talks: event.talks, event_date: event.date, cfp_link: cfp_link %}
 
 <h2 id="patrocinadores">Patrocinadores</h2>
 <div class="sponsors">
