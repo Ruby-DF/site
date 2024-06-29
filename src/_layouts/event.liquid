@@ -14,7 +14,7 @@ layout: default
     <a class="button decoration-none mr-auto" href="{{ resource.next.relative_url }}">Evento anterior</a>
   {% endif %}
 
-  {% if resource.previous != nil and resource.previous.date < site.time %}
+  {% if resource.previous != nil %}
     <a class="button decoration-none ml-auto" href="{{ resource.previous.relative_url }}">Próximo evento</a>
   {% endif %}
 </div>
