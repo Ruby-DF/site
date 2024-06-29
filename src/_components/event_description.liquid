@@ -8,7 +8,15 @@
 
 <h2 id="talks">Talks</h2>
 
-{% render "talk_list", talks: event.talks %}
+{% assign one_week_before_event = event.date | date: '%s' | minus: 604800 | date: '%Y-%m-%d' %}
+{% assign today = 'now' | date: '%Y-%m-%d' %}
+
+{% if site.cfp_link and today <= one_week_before_event %}
+  {% assign cfp_link = site.cfp_link %}
+{% else %}
+  {% assign cfp_link = false %}
+{% endif %}
+{% render "talk_list", talks: event.talks, cfp_link: cfp_link %}
 
 <h2 id="patrocinadores">Patrocinadores</h2>
 <div class="sponsors">

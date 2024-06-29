@@ -35,3 +35,9 @@
     </li>
   {% endfor %}
 </ol>
+
+{% if cfp_link %}
+  <aside class="note">
+    <p>Tem interesse em palestrar? <a class="font-bold" href="{{ cfp_link }}" target="_blank">Envie seu talk!</a></p>
+  </aside>
+{% endif %}
