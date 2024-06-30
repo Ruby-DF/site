@@ -21,7 +21,7 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     "Helvetica", "Arial", sans-serif;
   margin: 0 8px;
-  font-size: 108%;
+  font-size: 18px;
   line-height: 1.5;
 }
 
@@ -38,6 +38,10 @@ h1 {
   font-size: 2.5rem;
   color: var(--heading-color);
   line-height: 1.2;
+}
+
+h4 {
+  margin-bottom: 0.5rem;
 }
 
 body > header {
@@ -120,6 +124,11 @@ figcaption {
   text-align: center;
 }
 
+.event-picture {
+  border: 2px solid black;
+  box-shadow: 2px 2px 0 black;
+}
+
 .sponsors {
   display: flex;
   gap: 2rem;
@@ -174,6 +183,7 @@ figcaption {
   border-left: 4px solid var(--pink);
   padding: 0.1rem 1rem;
   background: var(--pink-lighter);
+  border-radius: 0.25rem;
 }
 
 .block { display: block; }

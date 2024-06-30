@@ -27,7 +27,7 @@ sponsors:
     link: https://www.ludoteca.com.br
 # attendees: 19
 location:
-  address: Blocks Coworking & Offices, Rua 30 Norte, Lote 4, Piso 3, Bloco A Ed. Cosmopolitan, Águas Claras
+  address: Blocks Coworking & Offices, Águas Claras
   link: https://maps.app.goo.gl/RQriLKQocUB3BkYg8
 categories: event
 ---

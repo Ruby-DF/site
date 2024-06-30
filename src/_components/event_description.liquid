@@ -1,12 +1,23 @@
 <p>
-  {% if event.date <= site.time %}
-    O evento foi realizado em {{ event.date | date: "%d/%m/%Y" }} com {{ event.attendees }} participantes.
+  📅 {{ event.date | date: "%d/%m/%Y" }} às {{ event.date | date: "%-Hh%M" }}.
+</p>
+
+<p>
+  📍
+  {% if event.location.link %}
+    <a href="{{ event.location.link }}" target="_blank">{{ event.location.address }}.</a>
   {% else %}
-    O evento será realizado em {{ event.date | date: "%d/%m/%Y" }} às {{ event.date | date: "%H:%M" }}.
+    {{ event.location.address }}.
   {% endif %}
 </p>
 
-<h2 id="talks">Talks</h2>
+{% if event.date < site.time %}
+  <p>
+    👥 {{ event.attendees }} participantes.
+  </p>
+{% endif %}
+
+<h3 id="talks">Talks</h3>
 
 {% assign one_week_before_event = event.date | date: '%s' | minus: 604800 | date: '%Y-%m-%d' %}
 {% assign today = 'now' | date: '%Y-%m-%d' %}
@@ -18,14 +29,7 @@
 {% endif %}
 {% render "talk_list", talks: event.talks, event_date: event.date, cfp_link: cfp_link %}
 
-<h2 id="local">Local</h2>
-{% if event.location.link %}
-  <a href="{{ event.location.link }}" target="_blank">{{ event.location.address }}</a>
-{% else %}
-  <p>{{ event.location.address }}</p>
-{% endif %}
-
-<h2 id="patrocinadores">Patrocinadores</h2>
+<h3 id="patrocinadores">Patrocinadores</h3>
 <div class="sponsors">
   {% for sponsor in event.sponsors %}
     <a href="{{ sponsor.link }}" target="_blank">
@@ -35,5 +39,5 @@
 </div>
 
 {% if event.picture %}
-  <img class="rounded-2xl" src="{{ event.picture | relative_url }}" alt="Meetup attendees" />
+  <img class="rounded-2xl event-picture" src="{{ event.picture | relative_url }}" alt="Meetup attendees" />
 {% endif %}
