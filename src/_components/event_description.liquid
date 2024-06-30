@@ -18,6 +18,13 @@
 {% endif %}
 {% render "talk_list", talks: event.talks, event_date: event.date, cfp_link: cfp_link %}
 
+<h2 id="local">Local</h2>
+{% if event.location.link %}
+  <a href="{{ event.location.link }}" target="_blank">{{ event.location.address }}</a>
+{% else %}
+  <p>{{ event.location.address }}</p>
+{% endif %}
+
 <h2 id="patrocinadores">Patrocinadores</h2>
 <div class="sponsors">
   {% for sponsor in event.sponsors %}
@@ -26,13 +33,6 @@
     </a>
   {% endfor %}
 </div>
-
-<h2 id="local">Local</h2>
-{% if event.location.link %}
-  <a href="{{ event.location.link }}" target="_blank">{{ event.location.address }}</a>
-{% else %}
-  <p>{{ event.location.address }}</p>
-{% endif %}
 
 {% if event.picture %}
   <img class="rounded-2xl" src="{{ event.picture | relative_url }}" alt="Meetup attendees" />
