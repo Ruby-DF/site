@@ -1,5 +1,6 @@
 :root {
   --primary-color: #d30000;
+  --primary-color-dark: #a00000;
   --primary-color-lighter: #ffe6e6;
 
   --pink: #D3006A;
@@ -106,6 +107,15 @@ footer {
   font-size: 1em;
 }
 
+footer svg {
+  width: 2rem;
+  height: auto;
+}
+
+footer a:hover {
+  color: var(--primary-color-dark);
+}
+
 hr {
   border: none;
   border-top: 2px dotted var(--action-color);
@@ -193,7 +203,9 @@ figcaption {
 .font-bold { font-weight: 700; }
 .gap-4 { gap: 1rem; }
 .items-center { align-items: center; }
+.justify-center { justify-content: center; }
 .list-roman { list-style-type: upper-roman; }
+.list-none { list-style-type: none; }
 .m-0 { margin: 0; }
 .max-h-80 { max-height: 20rem; }
 .ml-auto { margin-left: auto; }
