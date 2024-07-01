@@ -132,6 +132,7 @@ figcaption {
   font-size: 0.9rem;
   color: var(--body-color);
   text-align: center;
+  font-style: italic;
 }
 
 .event-picture {
