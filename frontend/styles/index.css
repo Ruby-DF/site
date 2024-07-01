@@ -147,7 +147,10 @@ figcaption {
 }
 
 .button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
   padding: 0.75rem 1.5rem;
   border: 2px solid var(--button-border-color);
   border-radius: 9999px;
