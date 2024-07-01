@@ -2,21 +2,29 @@
 layout: default
 ---
 
-Ruby DF é o meetup de Ruby no Distrito Federal. Nosso objetivo é reunir a comunidade Ruby do DF e entorno para compartilhar conhecimento, experiências e fazer networking.
-
----
-
 {% assign nearest_future_event = collections.events.resources | where_exp: "event", "event.date > site.time" | sort: "date" | first %}
 
 {% if nearest_future_event %}
 
-<div>
-  <h2>🎉 Faltam {% render "days_until", date: nearest_future_event.date %} dias para o próximo meetup!</h2>
+<h1 class="mb-6">🎉 Faltam {% render "days_until", date: nearest_future_event.date %} dias para o próximo meetup!</h1>
 
-  {% render "event_description", event: nearest_future_event, site: site %}
+<div class="w-full inline-flex justify-center mb-4">
+  {% if site.metadata.subscription_link %}
+    <a class="button" href="{{ site.metadata.subscription_link }}">Inscreva-se!</a>
+  {% else %}
+    <p class="m-0">Não é necessário inscrição para participar. Só aparecer no horário! 😉</p>
+  {% endif %}
 </div>
 
+{% render "event_description", event: nearest_future_event, site: site %}
+
 {% else %}
+
+<h1 class="sr-only">Ruby DF</h1>
+
+Ruby DF é o meetup de Ruby no Distrito Federal. Nosso objetivo é reunir a comunidade Ruby do DF e entorno para compartilhar conhecimento, experiências e fazer networking.
+
+---
 
 ## Próximo evento: em breve!
 

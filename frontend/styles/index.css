@@ -147,6 +147,7 @@ figcaption {
 }
 
 .button {
+  display: inline-block;
   padding: 0.75rem 1.5rem;
   border: 2px solid var(--button-border-color);
   border-radius: 9999px;
@@ -156,6 +157,7 @@ figcaption {
   background: var(--button-background);
   transform-style: preserve-3d;
   transition: .15s cubic-bezier(0, 0, .6, 1);
+  text-decoration: none;
 }
 
 .button::before {
@@ -203,12 +205,15 @@ figcaption {
 .flex-wrap { flex-wrap: wrap; }
 .font-bold { font-weight: 700; }
 .gap-4 { gap: 1rem; }
+.inline-flex { display: inline-flex; }
 .items-center { align-items: center; }
 .justify-center { justify-content: center; }
-.list-roman { list-style-type: upper-roman; }
 .list-none { list-style-type: none; }
+.list-roman { list-style-type: upper-roman; }
 .m-0 { margin: 0; }
 .max-h-80 { max-height: 20rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
 .ml-auto { margin-left: auto; }
 .mr-auto { margin-right: auto; }
 .mx-auto { margin-left: auto; margin-right: auto; }
@@ -216,4 +221,6 @@ figcaption {
 .rounded-2xl { border-radius: 1rem; }
 .rounded-full { border-radius: 9999px; }
 .rounded-lg { border-radius: 0.5rem; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
 .w-fit { width: fit-content; }
+.w-full { width: 100%; }
