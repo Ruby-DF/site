@@ -6,13 +6,18 @@
   --pink: #D3006A;
   --pink-lighter: #ffe6f3;
 
+  --light-gray: #e5e7eb;
+
   --body-background: var(--primary-color-lighter);
   --body-color: #444;
+  --secondary-text-color: #655454;
   --heading-color: black;
   --action-color: var(--primary-color);
 
   --button-background: var(--primary-color-lighter);
   --button-border-color: var(--primary-color);
+
+  --font-size-sm: 0.875rem;
 }
 
 body {
@@ -129,7 +134,7 @@ figure {
 
 figcaption {
   margin-top: 0.5rem;
-  font-size: 0.9rem;
+  font-size: var(--font-size-sm);
   color: var(--body-color);
   text-align: center;
   font-style: italic;
@@ -202,6 +207,44 @@ figcaption {
   border-radius: 0.25rem;
 }
 
+.event-timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  border-inline-start: 1px solid var(--light-gray);
+  max-width: 95%;
+}
+
+.event-timeline li {
+  margin-inline-start: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.event-timeline li:last-child {
+  margin-bottom: 0;
+}
+
+.event-timeline li span {
+  position: absolute;
+  margin-top: 5px;
+  inset-inline-start: -0.875rem;
+  display: flex;
+  height: 1.75rem;
+  width: 1.75rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: var(--primary-color-lighter);
+  color: var(--primary-color);
+  box-shadow: 0 0.5rem 0 0 white, 0 -0.5rem 0 0 white;
+}
+
+.event-timeline li time {
+  font-size: var(--font-size-sm);
+  color: var(--secondary-text-color);
+}
+
 .block { display: block; }
 .decoration-none { text-decoration: none; }
 .flex { display: flex; }
@@ -219,11 +262,13 @@ figcaption {
 .mb-6 { margin-bottom: 1.5rem; }
 .ml-auto { margin-left: auto; }
 .mr-auto { margin-right: auto; }
+.mt-2 { margin-top: 0.5rem; }
 .mx-auto { margin-left: auto; margin-right: auto; }
 .p-0 { padding: 0; }
 .rounded-2xl { border-radius: 1rem; }
 .rounded-full { border-radius: 9999px; }
 .rounded-lg { border-radius: 0.5rem; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
+.text-xl { font-size: 1.25rem; }
 .w-fit { width: fit-content; }
 .w-full { width: 100%; }
