@@ -1,7 +1,7 @@
 <ol>
   {% for talk in talks %}
     <li class="list-roman">
-      <h4>{{ talk.title }}</h4>
+      <h3>{{ talk.title }}</h3>
       <div class="flex gap-4 items-center">
         {% if talk.speaker.picture %}
           {% assign speaker_picture = talk.speaker.picture %}
