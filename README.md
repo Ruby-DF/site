@@ -1,17 +1,9 @@
-# Bridgetown Website README
+# Ruby DF
 
-Welcome to your new Bridgetown website! You can update this README file to provide additional context and setup information for yourself or other contributors.
+Esse é o repositório do site da comunidade Ruby DF. O site é construído com
+[Bridgetown](https://www.bridgetownrb.com/), um framework fullstack em Ruby.
 
-## Table of Contents
-
-- [Prerequisites](#prerequisites)
-- [Install](#install)
-- [Development](#development)
-- [Commands](#commands)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-
-## Prerequisites
+## Pré-requisitos
 
 - [GCC](https://gcc.gnu.org/install/)
 - [Make](https://www.gnu.org/software/make/)
@@ -23,21 +15,20 @@ Welcome to your new Bridgetown website! You can update this README file to provi
   - `>= 12`
 - [Yarn](https://yarnpkg.com)
 
-## Install
+## Instalação
 
 ```sh
 cd bridgetown-site-folder
 bundle install && yarn install
 ```
-> Learn more: [Bridgetown Getting Started Documentation](https://www.bridgetownrb.com/docs/).
 
-## Development
+> Mais informações: [Bridgetown Getting Started Documentation](https://www.bridgetownrb.com/docs/).
 
-To start your site in development mode, run `bin/bridgetown start` and navigate to [localhost:4000](https://localhost:4000/)!
+## Desenvolvimento
 
-Use a [theme](https://github.com/topics/bridgetown-theme) or add some [plugins](https://www.bridgetownrb.com/plugins/) to get started quickly.
+Para iniciar o site em modo de desenvolvimento, execute `bin/bridgetown start` e acesse [localhost:4000](https://localhost:4000/).
 
-### Commands
+### Comandos úteis
 
 ```sh
 # running locally
@@ -50,21 +41,4 @@ bin/bridgetown deploy
 bin/bridgetown console
 ```
 
-> Learn more: [Bridgetown CLI Documentation](https://www.bridgetownrb.com/docs/command-line-usage)
-
-## Deployment
-
-You can deploy Bridgetown sites on hosts like Render or Vercel as well as traditional web servers by simply building and copying the output folder to your HTML root.
-
-> Read the [Bridgetown Deployment Documentation](https://www.bridgetownrb.com/docs/deployment) for more information.
-
-## Contributing
-
-If repo is on GitHub:
-
-1. Fork it
-2. Clone the fork using `git clone` to your local development machine.
-3. Create your feature branch (`git checkout -b my-new-feature`)
-4. Commit your changes (`git commit -am 'Add some feature'`)
-5. Push to the branch (`git push origin my-new-feature`)
-6. Create a new Pull Request
+> Mais informações: [Bridgetown CLI Documentation](https://www.bridgetownrb.com/docs/command-line-usage)
