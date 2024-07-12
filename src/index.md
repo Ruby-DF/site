@@ -6,7 +6,13 @@ layout: default
 
 {% if nearest_future_event %}
 
-<h1 class="mb-6">🎉 Faltam {% render "days_until", date: nearest_future_event.date %} dias para o próximo meetup!</h1>
+{% assign one_day_before_event = event.date | date: '%s' | minus: 86400 | date: '%Y-%m-%d' %}
+{% assign today = 'now' | date: '%Y-%m-%d' %}
+
+{% if today == one_day_before_event %}
+<h1 class="mb-8">🎉 É amanhã! Aguardamos você!</h1>
+{% else %}
+<h1 class="mb-8">🎉 Faltam {% render "days_until", date: nearest_future_event.date %} dias para o próximo meetup!</h1>
 
 <div class="w-full inline-flex justify-center mb-4">
   {% if site.metadata.subscription_link %}
@@ -15,6 +21,7 @@ layout: default
     <p class="m-0">Não é necessário inscrição para participar. Só aparecer no horário! 😉</p>
   {% endif %}
 </div>
+{% endif %}
 
 {% render "event_description", event: nearest_future_event, site: site %}
 
