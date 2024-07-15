@@ -7,6 +7,7 @@ talks:
   - title: "Ruby on Rails: Colocando a segurança nos trilhos"
     speaker:
       name: José Augusto Dias Rosa
+      picture: /images/speakers/jose_augusto.jpg
       link: https://www.linkedin.com/in/joseaugustodev
   - title: "Riding the Rails of Magic: The journey between request and response"
     speaker:
