@@ -4,13 +4,18 @@ title: "Julho de 2024 - Terceira edição"
 date: 2024-07-27 09:30:00 -0300
 picture:
 talks:
+  - title: "Rails é..."
+    speaker:
+      name: Lázaro Nixon
+      picture: /images/speakers/lazaro_nixon.jpg
+      bio: Desenvolvedor Senior na Koombea
+      link: https://x.com/lazaronixon
   - title: "TBD"
     speaker:
       name: Pedro Schmitt
       picture: /images/speakers/pedro_schmitt.jpg
       bio: Dev @ Tucows e Criador da plataforma Acervo de Jogos
       link: https://twitter.com/pedroschm
-    # slides: https://docs.google.com/presentation/d/1zwy3RZhH4TOKBTEYPqtaK2Bl_d8bcIc9VhKr9t9lasw/edit?usp=sharing
   - title: "The Fast Lane: Async Rails"
     speaker:
       name: Matheus Richard
