@@ -5,6 +5,7 @@ date: 2024-07-27 09:30:00 -0300
 picture:
 talks:
   - title: "Rails é..."
+    slides: https://drive.google.com/file/d/1T-dvjzYHKEg2k4rG7HIGJhhxpzoRAD3q/view?usp=sharing
     speaker:
       name: Lázaro Nixon
       picture: /images/speakers/lazaro_nixon.jpg
