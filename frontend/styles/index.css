@@ -266,9 +266,9 @@ figcaption {
 .mt-2 { margin-top: 0.5rem; }
 .mx-auto { margin-left: auto; margin-right: auto; }
 .p-0 { padding: 0; }
+.rounded-xl { border-radius: 0.75rem; }
 .rounded-2xl { border-radius: 1rem; }
 .rounded-full { border-radius: 9999px; }
-.rounded-lg { border-radius: 0.5rem; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
 .text-xl { font-size: 1.25rem; }
 .w-fit { width: fit-content; }
