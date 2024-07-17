@@ -227,7 +227,7 @@ figcaption {
 
 .event-timeline li span {
   position: absolute;
-  margin-top: 5px;
+  margin-top: 3px;
   inset-inline-start: -0.875rem;
   display: flex;
   height: 1.75rem;
@@ -243,6 +243,17 @@ figcaption {
 .event-timeline li time {
   font-size: var(--font-size-sm);
   color: var(--secondary-text-color);
+}
+
+.circle {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 9999px;
+  background-color: var(--primary-color-lighter);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
 }
 
 .block { display: block; }
