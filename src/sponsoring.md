@@ -12,14 +12,57 @@ crescer.
 
 ## Objetivos do meetup
 
-- Criar um espaço no qual pessoas possam se encontrar, trocar ideias, melhorar
-suas habilidades, aprendendo e ensinando coisas novas.
-- Prover um ambiente em que empresas possam encontrar talentos e divulgar suas
-marcas. Compartilhar conhecimento e experiências é uma ótima forma de construir
-reputação e atrair devs.
-- Fomentar a comunidade local, promovendo a diversidade e inclusão. Acreditamos
-que mesmo pessoas que não trabalham diretamente com Ruby e tecnologia podem se
-beneficiar de eventos como o nosso.
+O Ruby DF é um grupo de pessoas que se reúnem para compartilhar conhecimento,
+experiências e fazer networking. Nossos objetivos são:
+
+<ul class="p-0 list-none my-8 flex flex-wrap gap-8">
+  <li class="stack flex-row mx-auto max-w-2xl gap-4">
+    <span class="circle circle-large">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.057.09V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411"/>
+      </svg>
+    </span>
+    <div>
+      <h3 class="mt-0 mb-1">Ser o ponto de encontro da comunidade</h3>
+      <p class="m-0 text-secondary">
+        Queremos criar um espaço regular no qual pessoas possam se encontrar, trocar ideias, melhorar
+        suas habilidades aprendendo e ensinando. Uma comunidade unida é mais forte e mais feliz!
+      </p>
+    </div>
+  </li>
+  <li class="stack flex-row mx-auto max-w-2xl gap-4">
+    <span class="circle circle-large">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+      </svg>
+    </span>
+    <div>
+      <h3 class="mt-0 mb-1">Aproximar empresas e devs</h3>
+      <p class="m-0 text-secondary">
+        Compartilhar conhecimento e experiências é uma ótima forma de construir
+        reputação e atrair devs. Visamos prover um ambiente em que empresas possam
+        encontrar talentos e divulgar suas marcas, ao passo que devs possam conhecer
+        o mercado de trabalho disponível.
+      </p>
+    </div>
+  </li>
+  <li class="stack flex-row mx-auto max-w-2xl gap-4">
+    <span class="circle circle-large">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
+  <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
+
+      </svg>
+    </span>
+    <div>
+      <h3 class="mt-0 mb-1">Promover o conhecimento</h3>
+      <p class="m-0 text-secondary">
+        Acreditamos que o conhecimento deve ser compartilhado e que todos têm algo a ensinar e aprender.
+        Por isso, fazemos palestras, workshops e eventos para que todos possam crescer juntos.
+      </p>
+    </div>
+  </li>
+</ul>
 
 ## Como você pode ajudar
 
