@@ -27,23 +27,104 @@ Nosso meetup é muito recente e totalmente gratuito, então não temos um espaç
 fixo para os eventos. Por isso, se você ou sua empresa puderem nos ajudar com
 algum dos itens abaixo, ficaríamos muito gratos!
 
-- **🎤 Espaço para o evento**: um local com capacidade para 20-40 pessoas, com
-  projetor/tela e internet. Pode ser o seu escritório, um coworking ou outro
-  espaço que você conheça. Uma das nossas opções custa em torno de R$ 300,00/turno;
-- **🍩 Comida e bebida**: um coffee break ou lanche para os participantes;
-- **💰 Dinheiro**: se preferir, pode nos ajudar com uma doação em dinheiro para
-  cobrir custos de locação de espaço.
+<ul class="p-0 list-none my-8 flex flex-wrap gap-8">
+  <li class="stack flex-row mx-auto max-w-2xl gap-4">
+    <span class="circle circle-large">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h3v-3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V16h3a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm1 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5M4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5"/>
+      </svg>
+    </span>
+    <div>
+      <h3 class="mt-0 mb-1">Espaço para o evento</h3>
+      <p class="m-0 text-secondary">
+        Um local com capacidade para 20-40 pessoas, com projetor/tela e internet.
+        Pode ser o seu escritório, um coworking ou outro espaço que você conheça.
+        O valor gira em torno de R$ 300,00/turno.
+      </p>
+    </div>
+  </li>
+
+  <li class="stack flex-row mx-auto max-w-2xl gap-4">
+    <span class="circle circle-large">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-credit-card-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6zM13 12.5a2 2 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5"/>
+        <path d="m4.4.8-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 3.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8m3 0-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 6.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8m3 0-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 9.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8"/>
+      </svg>
+    </span>
+    <div>
+      <h3 class="mt-0 mb-1">Comida e bebida</h3>
+      <p class="m-0 text-secondary">
+        Comida sempre é bem-vinda! Um coffee break ou lanche para os participantes é uma ótima forma de agradecer a presença de todos.
+      </p>
+    </div>
+  </li>
+
+  <li class="stack flex-row mx-auto max-w-2xl gap-4">
+    <span class="circle circle-large">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-credit-card-fill" viewBox="0 0 16 16">
+        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0zm0 3v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7zm3 2h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1"/>
+      </svg>
+    </span>
+    <div>
+      <h3 class="mt-0 mb-1">Dinheiro</h3>
+      <p class="m-0 text-secondary">
+        Se preferir, pode nos ajudar com uma doação em dinheiro. Todo valor arrecadado será utilizado para cobrir os custos dos eventos.
+      </p>
+    </div>
+  </li>
+</ul>
 
 ## O que podemos oferecer
 
 Como forma de agradecimento, oferecemos alguns benefícios para nossos patrocinadores:
 
-- Logística de registro e criação de publicidade para o evento;
-- Um espaço de 10 minutos para você promover sua empresa;
-- Uma talk de encerramento dada por um palestrante da sua empresa;
-- Divulgação da sua marca no site e redes sociais do Ruby DF.
-
-**Tem algo a mais em mente?** Entre em contato conosco e vamos conversar!
+<ul class="p-0 list-none my-8 flex flex-wrap gap-8">
+  <li class="stack flex-row mx-auto max-w-2xl gap-4">
+    <span class="circle circle-large">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0zm-1 .724c-2.067.95-4.539 1.481-7 1.656v6.237a25 25 0 0 1 1.088.085c2.053.204 4.038.668 5.912 1.56zm-8 7.841V4.934c-.68.027-1.399.043-2.008.053A2.02 2.02 0 0 0 0 7v2c0 1.106.896 1.996 1.994 2.009l.496.008a64 64 0 0 1 1.51.048m1.39 1.081q.428.032.85.078l.253 1.69a1 1 0 0 1-.983 1.187h-.548a1 1 0 0 1-.916-.599l-1.314-2.48a66 66 0 0 1 1.692.064q.491.026.966.06"/>
+      </svg>
+    </span>
+    <div>
+      <h3 class="mt-0 mb-1">Holofotes em você</h3>
+      <p class="m-0 text-secondary">Um espaço de 10 minutos para você promover sua empresa, divulgar vagas de emprego ou falar sobre um projeto interessante.</p>
+    </div>
+  </li>
+  <li class="stack flex-row mx-auto max-w-2xl gap-4">
+    <span class="circle circle-large">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8.473.337a.5.5 0 0 0-.946 0L6.954 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h1.85l-1.323 3.837a.5.5 0 1 0 .946.326L4.908 11H7.5v2.5a.5.5 0 0 0 1 0V11h2.592l1.435 4.163a.5.5 0 0 0 .946-.326L12.15 11H14a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H9.046z"/>
+      </svg>
+    </span>
+    <div>
+      <h3 class="mt-0 mb-1">Palestra de encerramento</h3>
+      <p class="m-0 text-secondary">Uma talk de encerramento dada por um palestrante da sua empresa. Essa é uma ótima forma de mostrar o que vocês têm feito e como estão inovando.</p>
+    </div>
+  </li>
+  <li class="stack flex-row mx-auto max-w-2xl gap-4">
+    <span class="circle circle-large">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+      </svg>
+    </span>
+    <div>
+      <h3 class="mt-0 mb-1">Sua marca no evento</h3>
+      <p class="m-0 text-secondary">Divulgaremos da sua marca proeminentemente no site e todas redes sociais do Ruby DF!</p>
+    </div>
+  </li>
+  <li class="stack flex-row mx-auto max-w-2xl gap-4">
+    <span class="circle circle-large">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5"/>
+      </svg>
+    </span>
+    <div>
+      <h3 class="mt-0 mb-1">Tem algo a mais em mente?</h3>
+      <p class="m-0 text-secondary">Se tiver mais ideias ou quer propor algo diferente, estamos abertos a sugestões!
+      Entre em contato conosco e vamos conversar!</p>
+    </div>
+  </li>
+</ul>
 
 ## Contato
 
