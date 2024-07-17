@@ -2,25 +2,28 @@
 layout: default
 ---
 
-{% assign nearest_future_event = collections.events.resources | where_exp: "event", "event.date > site.time" | sort: "date" | first %}
+{% assign nearest_future_event = collections.events.resources | where_exp: "event", "event.date >= site.time" | sort: "date" | first %}
 
 {% if nearest_future_event %}
 
-{% assign one_day_before_event = event.date | date: '%s' | minus: 86400 | date: '%Y-%m-%d' %}
+{% assign one_day_before_event = nearest_future_event.date | date: '%s' | minus: 86400 | date: '%Y-%m-%d' %}
 {% assign today = 'now' | date: '%Y-%m-%d' %}
+{% assign event_date = nearest_future_event.date | date: '%Y-%m-%d' %}
 
-{% if today == one_day_before_event %}
-<h1 class="mb-8">🎉 É amanhã! Aguardamos você!</h1>
+{% if today == event_date %}
+  <h1 class="mb-8">🎉 É hoje! Aguardamos você!</h1>
+{% elsif today == one_day_before_event %}
+  <h1 class="mb-8">🎉 É amanhã! Aguardamos você!</h1>
 {% else %}
-<h1 class="mb-8">🎉 Faltam {% render "days_until", date: nearest_future_event.date %} dias para o próximo meetup!</h1>
+  <h1 class="mb-8">🎉 Faltam {% render "days_until", date: nearest_future_event.date %} dias para o próximo meetup!</h1>
 
-<div class="w-full inline-flex justify-center mb-4">
-  {% if site.metadata.subscription_link %}
-    <a class="button" href="{{ site.metadata.subscription_link }}">Inscreva-se!</a>
-  {% else %}
-    <p class="m-0">Não é necessário inscrição para participar. Só aparecer no horário! 😉</p>
-  {% endif %}
-</div>
+  <div class="w-full inline-flex justify-center mb-4">
+    {% if site.metadata.subscription_link %}
+      <a class="button" href="{{ site.metadata.subscription_link }}">Inscreva-se!</a>
+    {% else %}
+      <p class="m-0">Não é necessário inscrição para participar. Só aparecer no horário! 😉</p>
+    {% endif %}
+  </div>
 {% endif %}
 
 {% render "event_description", event: nearest_future_event, site: site %}
