@@ -11,7 +11,7 @@ talks:
       picture: /images/speakers/lazaro_nixon.jpg
       bio: Desenvolvedor Senior na Koombea
       link: https://x.com/lazaronixon
-  - title: "TBD"
+  - title: "Dicas Práticas Para Conquistar Seu Primeiro Salário com Ruby"
     speaker:
       name: Pedro Schmitt
       picture: /images/speakers/pedro_schmitt.jpg
