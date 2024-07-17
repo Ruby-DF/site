@@ -7,8 +7,8 @@ title: Seja um patrocinador
 
 Muito obrigado pelo seu interesse em patrocinar o Ruby DF! Manter a comunidade
 ativa e com eventos regulares é um desafio. Para isso, precisamos de apoio de
-empresas e pessoas que acreditam no nosso trabalho e queiram ajudar a comunidade
-a crescer.
+empresas e pessoas que acreditam no nosso trabalho e queiram nos ajudar a
+crescer.
 
 ## Objetivos do meetup
 
@@ -138,3 +138,19 @@ detalhes.
   <img class="block rounded-xl max-h-80 mx-auto event-picture" src="{{ '/images/events/2023-10.jpg' | relative_url }}" alt="Meetup attendees" alt="The Ruby DF community at a meetup">
   <figcaption class="text-center text-sm text-gray-600">A comunidade Ruby DF agradece sua ajuda!</figcaption>
 </figure>
+
+## Nossos parceiros
+
+Agradecemos a todas as empresas e pessoas que já nos ajudaram a manter o meetup
+de pé! Se você quiser ver quem já nos apoiou, confira a lista dos nossos
+parceiros:
+
+{% assign sponsors = collections.events.resources | map: "sponsors" | uniq | sort_natural: 'name' %}
+
+<div class="flex flex-wrap items-center justify-evenly gap-8 mt-8">
+{% for sponsor in sponsors %}
+  <a href="{{ sponsor.link }}" target="_blank">
+    <img width=250 src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.name }} logo" />
+  </a>
+{% endfor %}
+</div>
