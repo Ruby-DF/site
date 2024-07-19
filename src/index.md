@@ -44,6 +44,12 @@ um pouco sobre as [edições passadas aqui](/events).
 
 Se quiser ajudar na organização, dê uma olhada em [como você pode contribuir](/sponsoring).
 
+{% if site.metadata.cfp_link %}
+  <aside class="note">
+    <p>Tem interesse em palestrar? <a class="font-bold" href="{{ cfp_link }}" target="_blank">Envie seu talk!</a></p>
+  </aside>
+{% endif %}
+
 ## Patrocínio
 
 Se você ou sua empresa tem interesse em patrocinar o Ruby DF, veja [como você
