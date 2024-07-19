@@ -185,8 +185,7 @@ detalhes.
 ## Nossos parceiros
 
 Agradecemos a todas as empresas e pessoas que já nos ajudaram a manter o meetup
-de pé! Se você quiser ver quem já nos apoiou, confira a lista dos nossos
-parceiros:
+de pé! Confira a lista dos nossos parceiros:
 
 {% assign sponsors = collections.events.resources | map: "sponsors" | uniq | sort_natural: 'name' %}
 
