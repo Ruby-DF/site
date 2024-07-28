@@ -44,13 +44,15 @@ Estamos preparando o próximo meetup. Fique ligado nas [nossas redes
 sociais]({{ site.metadata.telegram_link }}) para mais informações. Enquanto isso, você pode conferir
 um pouco sobre as [edições passadas aqui](/events).
 
-Se quiser ajudar na organização, dê uma olhada em [como você pode contribuir](/sponsoring).
-
 {% if site.metadata.cfp_link %}
   <aside class="note">
     <p>Tem interesse em palestrar? <a class="font-bold" href="{{ cfp_link }}" target="_blank">Envie seu talk!</a></p>
   </aside>
 {% endif %}
+
+Se quiser ajudar na organização, há várias formas de contribuir.
+
+<a class="mx-auto block w-fit button" href="{{ "/sponsoring" | relative_url }}">Como posso ajudar?</a>
 
 ## Patrocínio
 
