@@ -3,7 +3,7 @@ layout: event
 title: "Julho de 2024 - Terceira edição"
 date: 2024-07-27 09:30:00 -0300
 subscription_link: https://forms.gle/b7FXKJJX9hdNq8wd6
-picture:
+picture: /images/events/2024-07.webp
 talks:
   - title: "Rails é..."
     slides: https://drive.google.com/file/d/1T-dvjzYHKEg2k4rG7HIGJhhxpzoRAD3q/view?usp=sharing
@@ -32,7 +32,7 @@ sponsors:
   - name: ludoteca
     logo: /images/sponsors/ludoteca.png
     link: https://www.ludoteca.com.br
-# attendees: 19
+attendees: 20
 location:
   address: Blocks Coworking & Offices, Águas Claras
   link: https://maps.app.goo.gl/RQriLKQocUB3BkYg8
