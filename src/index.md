@@ -17,7 +17,7 @@ layout: default
 
   <div class="w-full inline-flex justify-center mb-4">
     {% if event.subscription_link %}
-      {% if days_until_event > 3 %}
+      {% if days_until_event > 2 %}
         <a class="button" href="{{ event.subscription_link }}">Inscreva-se!</a>
       {% else %}
         <p class="m-0">Se você garantiu sua vaga, agora é só aguardar o dia do evento! 😉</p>
