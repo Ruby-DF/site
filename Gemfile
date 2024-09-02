@@ -34,3 +34,9 @@ gem "puma", "< 7"
 
 # Or for faster parsing of HTML-only resources via Inspectors, use Nokolexbor:
 # gem "nokolexbor", "~> 0.4"
+
+# Internet calendaring, Ruby style
+gem "icalendar", "~> 2.10"
+
+# Ruby Time Zone Library
+gem "tzinfo", "~> 2.0"

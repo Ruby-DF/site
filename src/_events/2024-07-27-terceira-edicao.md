@@ -34,6 +34,7 @@ sponsors:
     link: https://www.ludoteca.com.br
 attendees: 20
 location:
+  city: Brasilia, Brazil
   address: Blocks Coworking & Offices, Águas Claras
   link: https://maps.app.goo.gl/RQriLKQocUB3BkYg8
 categories: event
