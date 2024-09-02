@@ -76,6 +76,9 @@ GEM
       activesupport (>= 5.0.0, < 8.0)
     i18n (1.14.5)
       concurrent-ruby (~> 1.0)
+    icalendar (2.10.2)
+      ice_cube (~> 0.16)
+    ice_cube (0.17.0)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -130,7 +133,9 @@ PLATFORMS
 
 DEPENDENCIES
   bridgetown (~> 1.3.4)
+  icalendar (~> 2.10)
   puma (< 7)
+  tzinfo (~> 2.0)
 
 BUNDLED WITH
    2.5.4

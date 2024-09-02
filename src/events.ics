@@ -1,0 +1,9 @@
+---
+layout: null
+template_engine: erb
+---
+
+<%= render Calendar.new(
+  events: collections.events.resources.sort_by(&:date),
+  timezone: site.config.timezone
+) %>
