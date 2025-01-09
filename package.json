@@ -15,5 +15,6 @@
     "postcss-load-config": "^4.0.1",
     "postcss-preset-env": "^9.1.2",
     "read-cache": "^1.0.0"
-  }
+  },
+  "dependencies": {}
 }
