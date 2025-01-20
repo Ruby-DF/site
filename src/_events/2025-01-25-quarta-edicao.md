@@ -17,12 +17,11 @@ talks:
       picture: /images/speakers/thiago_ribeiro.jpg
       bio: TechLead na Empresa AmFi
       link: https://github.com/thiagovsk
-  - title: "Meus scripts em Ruby"
+  - title: "Como Rails está moldando a democracia no Brasil"
     speaker:
-      name: Matheus Richard
-      picture: /images/speakers/matheus_richard.jpg
-      bio: Senior Developer @ thoughtbot
-      link: https://twitter.com/matheusrich
+      name: Maicon Mares
+      bio: Desenvolvedor Pleno no Laboratório Livre (LAPPIS)
+      link: https://www.linkedin.com/in/maicon-mares
 sponsors:
   - name: thoughtbot
     logo: /images/sponsors/thoughtbot.svg
