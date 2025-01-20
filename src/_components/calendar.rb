@@ -26,7 +26,7 @@ class Calendar < Bridgetown::Component
       sponsors = event.data.sponsors.map(&:name).to_sentence(two_words_connector: ' e ', last_word_connector: ' e ')
 
       description = <<~DESCRIPTION
-        RubyDF - #{title}
+        Ruby DF - #{title}
 
         Localização:
         #{address}
@@ -42,7 +42,7 @@ class Calendar < Bridgetown::Component
       calendar.event do |e|
         e.dtstart     = ical_time(datetime)
         e.dtend       = ical_time(datetime + 2.hours)
-        e.summary     = "RubyDF - #{title}"
+        e.summary     = "Ruby DF - #{title}"
         e.location    = city
         e.url         = url
         e.description = description
