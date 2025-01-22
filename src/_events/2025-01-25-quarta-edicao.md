@@ -20,6 +20,7 @@ talks:
   - title: "Como Rails está moldando a democracia no Brasil"
     speaker:
       name: Maicon Mares
+      picture: /images/speakers/maicon_mares.jpg
       bio: Desenvolvedor Pleno no Laboratório Livre (LAPPIS)
       link: https://www.linkedin.com/in/maicon-mares
 sponsors:
