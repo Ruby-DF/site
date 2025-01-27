@@ -3,7 +3,7 @@ layout: event
 title: "Janeiro de 2025 - Quarta edição"
 date: 2025-01-25 09:30:00 -0300
 subscription_link: https://forms.gle/75FjY92qvJHrX9od7
-# picture: /images/events/2025-01.webp
+picture: /images/events/2025-01.jpeg
 talks:
   - title: "Construa Sua Própria Gem"
     speaker:
@@ -30,10 +30,10 @@ sponsors:
   - name: ludoteca
     logo: /images/sponsors/ludoteca.png
     link: https://www.ludoteca.com.br
-# attendees:
+attendees: 17
 location:
   city: Brasilia, Brazil
-  address: Blocks Coworking & Offices, Águas Claras
+  address: Blocks Coworking & Offices, Águas Claras, 3º andar
   link: https://maps.app.goo.gl/RQriLKQocUB3BkYg8
 categories: event
 ---
