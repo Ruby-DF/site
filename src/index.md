@@ -36,6 +36,13 @@ layout: default
 
 Ruby DF é o meetup de Ruby no Distrito Federal. Nosso objetivo é reunir a comunidade Ruby do DF e entorno para compartilhar conhecimento, experiências e fazer networking.
 
+Participe do Ruby DF se você:
+
+- é novo em Ruby e quer aprender mais
+- trabalha com Ruby e quer aprimorar seus conhecimentos
+- quer ouvir palestras interessantes sobre Ruby e desenvolvimento de software em geral
+- quer conhecer outras pessoas que também gostam de Ruby
+
 ---
 
 ## Próximo evento: em breve!
