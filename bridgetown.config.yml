@@ -42,3 +42,11 @@ collections:
     sort_by: order
     sort_direction: descending
     future: true
+
+defaults:
+  - values:
+      image:
+        path: /images/logo.png
+        width: 512
+        height: 512
+        alt: Ruby DF logo

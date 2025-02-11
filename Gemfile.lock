@@ -49,6 +49,8 @@ GEM
       zeitwerk (~> 2.5)
     bridgetown-paginate (1.3.4)
       bridgetown-core (= 1.3.4)
+    bridgetown-seo-tag (6.0.0)
+      bridgetown (>= 1.2.0.beta5, < 2.0)
     colorator (1.1.0)
     concurrent-ruby (1.3.3)
     connection_pool (2.4.1)
@@ -131,6 +133,7 @@ PLATFORMS
 
 DEPENDENCIES
   bridgetown (~> 1.3.4)
+  bridgetown-seo-tag (~> 6.0)
   icalendar (~> 2.10)
   puma (< 7)
   tzinfo (~> 2.0)

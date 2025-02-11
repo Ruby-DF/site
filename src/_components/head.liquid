@@ -4,6 +4,7 @@
 <title>{% if resource_title != "Index" %}{{ resource_title | escape }} | {{ metadata.title | escape }}{% else %}{{ metadata.title | escape }}: {{ metadata.tagline | escape }}{% endif %}</title>
 
 <meta name="description" content="{{ metadata.description }}" />
+{% seo %}
 
 <link rel="stylesheet" href="{% asset_path css %}" />
 <link rel="icon" href="{{ "/favicon.ico" | relative_url }}" sizes="32x32">
