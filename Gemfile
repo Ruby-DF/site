@@ -40,3 +40,5 @@ gem "icalendar", "~> 2.10"
 
 # Ruby Time Zone Library
 gem "tzinfo", "~> 2.0"
+
+gem "bridgetown-seo-tag", "~> 6.0"

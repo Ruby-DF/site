@@ -1,0 +1,5 @@
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /src/icon-512.png
