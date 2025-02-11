@@ -5,15 +5,16 @@ title: Seja um patrocinador
 
 # Seja um patrocinador!
 
-Muito obrigado pelo seu interesse em patrocinar o Ruby DF! Manter a comunidade
-ativa e com eventos regulares é um desafio. Para isso, precisamos de apoio de
-empresas e pessoas que acreditam no nosso trabalho e queiram nos ajudar a
-crescer.
+Agradecemos seu interesse em patrocinar o Ruby DF! Manter nossa comunidade ativa
+e com eventos recorrentes não é fácil, então buscamos empresas e pessoas
+dispostas a investir no crescimento do meetup.
 
 ## Objetivos do meetup
 
-O Ruby DF é um grupo de pessoas que se reúnem para compartilhar conhecimento,
-experiências e fazer networking. Nossos objetivos são:
+Queremos fortalecer a comunidade Ruby no Distrito Federal, criando
+oportunidades de aprendizado, networking e parceria entre empresas e devs. No
+Ruby DF, compartilhamos conhecimento e damos visibilidade a projetos, vagas e
+tecnologias empolgantes.
 
 <ul class="p-0 list-none my-8 flex flex-wrap gap-8">
   <li class="stack flex-row mx-auto max-w-2xl gap-4">
@@ -25,8 +26,9 @@ experiências e fazer networking. Nossos objetivos são:
     <div>
       <h3 class="mt-0 mb-1">Ser o ponto de encontro da comunidade</h3>
       <p class="m-0 text-secondary">
-        Queremos criar um espaço regular no qual pessoas possam se encontrar, trocar ideias, melhorar
-        suas habilidades aprendendo e ensinando. Uma comunidade unida é mais forte e mais feliz!
+        Reunir devs para trocar ideias e experiências fortalece a comunidade.
+        Queremos manter um calendário de eventos e contar com o seu apoio para
+        tornar isso possível.
       </p>
     </div>
   </li>
@@ -37,12 +39,11 @@ experiências e fazer networking. Nossos objetivos são:
       </svg>
     </span>
     <div>
-      <h3 class="mt-0 mb-1">Aproximar empresas e devs</h3>
+      <h3 class="mt-0 mb-1">Conexão entre talentos e empresas</h3>
       <p class="m-0 text-secondary">
-        Compartilhar conhecimento e experiências é uma ótima forma de construir
-        reputação e atrair devs. Visamos prover um ambiente em que empresas possam
-        encontrar talentos e divulgar suas marcas, ao passo que devs possam conhecer
-        o mercado de trabalho disponível.
+        Nosso espaço é ideal para que empresas divulguem marcas e oportunidades, ao
+        passo que profissionais se mantêm atualizados sobre o mercado e possam
+        encontrar novas parcerias.
       </p>
     </div>
   </li>
@@ -51,14 +52,12 @@ experiências e fazer networking. Nossos objetivos são:
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
           <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
   <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
-
       </svg>
     </span>
     <div>
-      <h3 class="mt-0 mb-1">Promover o conhecimento</h3>
+      <h3 class="mt-0 mb-1">Compartilhar conhecimento</h3>
       <p class="m-0 text-secondary">
-        Acreditamos que o conhecimento deve ser compartilhado e que todos têm algo a ensinar e aprender.
-        Por isso, fazemos palestras, workshops e eventos para que todos possam crescer juntos.
+        Acreditamos que todos podem aprender e ensinar. Por isso, fazemos palestras, workshops e eventos para que todos possam crescer juntos.
       </p>
     </div>
   </li>
@@ -66,9 +65,9 @@ experiências e fazer networking. Nossos objetivos são:
 
 ## Como você pode ajudar
 
-Nosso meetup é muito recente e totalmente gratuito, então não temos um espaço
-fixo para os eventos. Por isso, se você ou sua empresa puderem nos ajudar com
-algum dos itens abaixo, ficaríamos muito gratos!
+Para tornar nossos encontros cada vez melhores, contamos com patrocínios que
+possibilitam desde a reserva de um local até coffee breaks especiais. Qualquer
+apoio é valioso para mantermos o meetup <strong>gratuito</strong> e aberto a todos.
 
 <ul class="p-0 list-none my-8 flex flex-wrap gap-8">
   <li class="stack flex-row mx-auto max-w-2xl gap-4">
@@ -82,11 +81,10 @@ algum dos itens abaixo, ficaríamos muito gratos!
       <p class="m-0 text-secondary">
         Um local com capacidade para 20-40 pessoas, com projetor/tela e internet.
         Pode ser o seu escritório, um coworking ou outro espaço que você conheça.
-        O valor gira em torno de R$ 300,00/turno.
+        O coworking mais próximo custa R$ 250 por evento.
       </p>
     </div>
   </li>
-
   <li class="stack flex-row mx-auto max-w-2xl gap-4">
     <span class="circle circle-large">
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-credit-card-fill" viewBox="0 0 16 16">
@@ -97,11 +95,11 @@ algum dos itens abaixo, ficaríamos muito gratos!
     <div>
       <h3 class="mt-0 mb-1">Comida e bebida</h3>
       <p class="m-0 text-secondary">
-        Comida sempre é bem-vinda! Um coffee break ou lanche para os participantes é uma ótima forma de agradecer a presença de todos.
+        Oferecer um coffee break ou lanche deixa o evento mais acolhedor e
+        atrai maior engajamento dos participantes.
       </p>
     </div>
   </li>
-
   <li class="stack flex-row mx-auto max-w-2xl gap-4">
     <span class="circle circle-large">
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-credit-card-fill" viewBox="0 0 16 16">
@@ -109,9 +107,10 @@ algum dos itens abaixo, ficaríamos muito gratos!
       </svg>
     </span>
     <div>
-      <h3 class="mt-0 mb-1">Dinheiro</h3>
+      <h3 class="mt-0 mb-1">Contribuição financeira</h3>
       <p class="m-0 text-secondary">
-        Se preferir, pode nos ajudar com uma doação em dinheiro. Todo valor arrecadado será utilizado para cobrir os custos dos eventos.
+        Se preferir doar em dinheiro, vamos aplicar os recursos para cobrir
+        despesas de locação, equipamentos e demais custos do meetup.
       </p>
     </div>
   </li>
@@ -119,7 +118,8 @@ algum dos itens abaixo, ficaríamos muito gratos!
 
 ## O que podemos oferecer
 
-Como forma de agradecimento, oferecemos alguns benefícios para nossos patrocinadores:
+Em troca do seu patrocínio, valorizamos e destacamos sua marca para que seu
+investimento retorne em maior alcance e visibilidade.
 
 <ul class="p-0 list-none my-8 flex flex-wrap gap-8">
   <li class="stack flex-row mx-auto max-w-2xl gap-4">
@@ -129,8 +129,11 @@ Como forma de agradecimento, oferecemos alguns benefícios para nossos patrocina
       </svg>
     </span>
     <div>
-      <h3 class="mt-0 mb-1">Holofotes em você</h3>
-      <p class="m-0 text-secondary">Um espaço de 10 minutos para você promover sua empresa, divulgar vagas de emprego ou falar sobre um projeto interessante.</p>
+      <h3 class="mt-0 mb-1">Holofotes na sua empresa</h3>
+      <p class="m-0 text-secondary">
+        Um momento para que você apresente suas soluções, promova vagas e conquiste
+        a atenção de possíveis candidatos ou parceiros.
+      </p>
     </div>
   </li>
   <li class="stack flex-row mx-auto max-w-2xl gap-4">
@@ -141,7 +144,10 @@ Como forma de agradecimento, oferecemos alguns benefícios para nossos patrocina
     </span>
     <div>
       <h3 class="mt-0 mb-1">Palestra de encerramento</h3>
-      <p class="m-0 text-secondary">Uma talk de encerramento dada por um palestrante da sua empresa. Essa é uma ótima forma de mostrar o que vocês têm feito e como estão inovando.</p>
+      <p class="m-0 text-secondary">
+        Uma talk exclusiva para apresentar seus produtos, pesquisas ou histórias
+        inspiradoras, realçando o quanto vocês investem na comunidade.
+      </p>
     </div>
   </li>
   <li class="stack flex-row mx-auto max-w-2xl gap-4">
@@ -151,8 +157,11 @@ Como forma de agradecimento, oferecemos alguns benefícios para nossos patrocina
       </svg>
     </span>
     <div>
-      <h3 class="mt-0 mb-1">Sua marca no evento</h3>
-      <p class="m-0 text-secondary">Divulgaremos da sua marca proeminentemente no site e todas redes sociais do Ruby DF!</p>
+      <h3 class="mt-0 mb-1">Exposição da sua marca</h3>
+      <p class="m-0 text-secondary">
+        Colocamos seu logo em destaque no nosso site e redes sociais, garantindo
+        ampla visibilidade para a sua empresa.
+      </p>
     </div>
   </li>
   <li class="stack flex-row mx-auto max-w-2xl gap-4">
@@ -162,9 +171,11 @@ Como forma de agradecimento, oferecemos alguns benefícios para nossos patrocina
       </svg>
     </span>
     <div>
-      <h3 class="mt-0 mb-1">Tem algo a mais em mente?</h3>
-      <p class="m-0 text-secondary">Se tiver mais ideias ou quer propor algo diferente, estamos abertos a sugestões!
-      Entre em contato conosco e vamos conversar!</p>
+      <h3 class="mt-0 mb-1">Outras ideias?</h3>
+      <p class="m-0 text-secondary">
+        Tem algo único para oferecer ou quer propor algum outro formato de apoio?
+        Estamos abertos a ouvir suas sugestões!
+      </p>
     </div>
   </li>
 </ul>
@@ -173,19 +184,18 @@ Como forma de agradecimento, oferecemos alguns benefícios para nossos patrocina
 
 ## Contato
 
-Agradecemos novamente pelo seu interesse em ajudar o Ruby DF! Entre em contato
-conosco pelo email <{{ site.metadata.email }}> para acertarmos todos os
-detalhes.
+Interessado em patrocinar ou tirar dúvidas? Mande um email para
+<{{ site.metadata.email }}> e vamos conversar!
 
 <figure>
-  <img class="block rounded-xl max-h-80 mx-auto event-picture" src="{{ '/images/events/2023-10.jpg' | relative_url }}" alt="Meetup attendees" alt="The Ruby DF community at a meetup">
-  <figcaption class="text-center text-sm text-gray-600">A comunidade Ruby DF agradece sua ajuda!</figcaption>
+  <img class="block rounded-xl max-h-80 mx-auto event-picture" src="{{ '/images/events/2023-10.jpg' | relative_url }}" alt="Meetup attendees">
+  <figcaption class="text-center text-sm text-gray-600">O Ruby DF agradece qualquer tipo de apoio!</figcaption>
 </figure>
 
 ## Nossos parceiros
 
-Agradecemos a todas as empresas e pessoas que já nos ajudaram a manter o meetup
-de pé! Confira a lista dos nossos parceiros:
+Já tivemos a honra de contar com o patrocínio de empresas e pessoas incríveis.
+Abaixo, confira quem já investiu no Ruby DF:
 
 {% assign sponsors = collections.events.resources | map: "sponsors" | uniq | sort_natural: 'name' %}
 
