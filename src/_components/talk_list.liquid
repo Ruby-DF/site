@@ -1,7 +1,7 @@
 <ol>
   {% for talk in talks %}
     <li class="list-roman">
-      <h3 class="mb-2">{{ talk.title }}</h3>
+      <h3 class="mt-3 mb-2">{{ talk.title }}</h3>
       <div class="flex gap-4 items-center">
         {% if talk.speaker.picture %}
           {% assign speaker_picture = talk.speaker.picture %}
@@ -18,7 +18,7 @@
           {% endif %}
 
           {% if talk.speaker.bio or talk.slides %}
-            <p class="m-0">
+            <p class="m-0 text-secondary">
               {{ talk.speaker.bio }}
 
               {% if talk.speaker.bio and talk.slides and event_date <= site.time %}
@@ -34,6 +34,13 @@
       </div>
     </li>
   {% endfor %}
+
+  <li class="list-none">
+    <h3 class="mb-2">Intervalo</h3>
+  </li>
+  <li class="list-none">
+    <h3 class="mb-2">Roda de conversa</h3>
+  </li>
 </ol>
 
 {% if cfp_link %}
