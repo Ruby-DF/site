@@ -282,6 +282,7 @@ figcaption {
 .flex-row { flex-direction: row; }
 .flex-wrap { flex-wrap: wrap; }
 .font-bold { font-weight: 700; }
+.gap-2 { gap: 0.5rem; }
 .gap-4 { gap: 1rem; }
 .gap-8 { gap: 2rem; }
 .inline-flex { display: inline-flex; }
