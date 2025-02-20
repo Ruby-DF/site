@@ -316,3 +316,4 @@ figcaption {
 .text-xl { font-size: 1.25rem; }
 .w-fit { width: fit-content; }
 .w-full { width: 100%; }
+.h-full { height: 100%; }
