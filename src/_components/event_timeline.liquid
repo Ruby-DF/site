@@ -10,7 +10,6 @@
         <a href="{{ event.relative_url }}">{{ event.title }}</a>
       </h2>
       <time>Realizado em {{ event.date | date: "%d/%m/%Y" }}</time>
-      <p class="m-0 mt-2">O evento contou com {% render "plural", word: "palestra", count: event.talks.size %} e {% render "plural", word: "participante", count: event.attendees %}.</p>
-    </li>
+      <p class="m-0 mt-2">O evento contou com {% render "plural", word: "palestra", count: event.talks.size %}{% if event.attendees %} e {% render "plural", word: "participante", count: event.attendees %}{% endif %}.</p> </li>
   {% endfor %}
 </ol>
