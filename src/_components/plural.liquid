@@ -1,6 +1,1 @@
-{{ count }}
-{% if count == 1 %}
-{{ word }}
-{% else %}
-{{ word }}s
-{%- endif -%}
+{{ count }} {{ word }}{% if count != 1 %}s{%- endif -%}
