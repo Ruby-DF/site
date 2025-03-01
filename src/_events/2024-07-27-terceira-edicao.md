@@ -1,6 +1,6 @@
 ---
 layout: event
-title: "Julho de 2024 - Terceira edição"
+title: "3ª Edição - Julho de 2024"
 date: 2024-07-27 09:30:00 -0300
 subscription_link: https://forms.gle/b7FXKJJX9hdNq8wd6
 picture: /images/events/2024-07.webp

@@ -1,6 +1,6 @@
 ---
 layout: event
-title: "Fevereiro de 2024 - Segunda edição"
+title: "2ª Edição - Fevereiro de 2024"
 date: 2024-02-03 10:00:00 -0300
 picture: /images/events/2024-02.jpg
 talks:

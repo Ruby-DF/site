@@ -1,8 +1,7 @@
 ---
 layout: event
-title: "Janeiro de 2025 - Quarta edição"
+title: "4ª Edição - Janeiro de 2025"
 date: 2025-01-25 09:30:00 -0300
-subscription_link: https://forms.gle/75FjY92qvJHrX9od7
 picture: /images/events/2025-01.jpeg
 talks:
   - title: "Construa Sua Própria Gem"
