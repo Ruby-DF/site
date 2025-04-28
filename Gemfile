@@ -36,7 +36,7 @@ gem "puma", "< 7"
 # gem "nokolexbor", "~> 0.4"
 
 # Internet calendaring, Ruby style
-gem "icalendar", "~> 2.10"
+gem "icalendar", "~> 2.11"
 
 # Ruby Time Zone Library
 gem "tzinfo", "~> 2.0"
