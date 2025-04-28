@@ -78,8 +78,11 @@ GEM
       activesupport (>= 5.0.0, < 8.0)
     i18n (1.14.5)
       concurrent-ruby (~> 1.0)
-    icalendar (2.10.2)
+    icalendar (2.11.0)
+      base64
       ice_cube (~> 0.16)
+      logger
+      ostruct
     ice_cube (0.17.0)
     kramdown (2.4.0)
       rexml
@@ -89,11 +92,13 @@ GEM
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    logger (1.7.0)
     minitest (5.23.1)
     mutex_m (0.2.0)
     net-http (0.4.1)
       uri
     nio4r (2.7.3)
+    ostruct (0.6.1)
     public_suffix (5.0.5)
     puma (6.4.3)
       nio4r (~> 2.0)
@@ -134,7 +139,7 @@ PLATFORMS
 DEPENDENCIES
   bridgetown (~> 1.3.4)
   bridgetown-seo-tag (~> 6.0)
-  icalendar (~> 2.10)
+  icalendar (~> 2.11)
   puma (< 7)
   tzinfo (~> 2.0)
 
