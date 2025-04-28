@@ -2,6 +2,7 @@
 layout: event
 title: "6ª Edição - Os Bastidores do Ruby"
 date: 2025-05-10 09:30:00 -0300
+subscription_link: https://forms.gle/WbEot9P2qqRetWwe8
 talks:
   - title: "Ruby Internals: A Guide for Rails Developers"
     speaker:
