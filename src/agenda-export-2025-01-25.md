@@ -1,5 +1,5 @@
 ---
-layout: event
+layout: agenda_export
 title: "4ª Edição - Janeiro de 2025"
 date: 2025-01-25 09:30:00 -0300
 picture: /images/events/2025-01.jpeg
@@ -38,4 +38,5 @@ location:
   address: Blocks Coworking & Offices, Águas Claras, 3º andar
   link: https://maps.app.goo.gl/RQriLKQocUB3BkYg8
 categories: event
+permalink: /agenda-export/2025-01-25/
 ---

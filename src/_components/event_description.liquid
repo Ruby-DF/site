@@ -43,7 +43,14 @@
 {% else %}
   {% assign cfp_link = false %}
 {% endif %}
-{% render "event_agenda", event: event, cfp_link: cfp_link, site: site %}
+
+<div class="flex gap-4 mb-4">
+  <a href="/agenda-export/{{ event.date | date: '%Y-%m-%d' }}/" target="_blank" class="button decoration-none">
+    📋 Exportar Agenda
+  </a>
+</div>
+
+{% render "timed_agenda", event: event, cfp_link: cfp_link, site: site %}
 
 <h2 id="patrocinadores">Patrocinadores</h2>
 <div class="sponsors">
