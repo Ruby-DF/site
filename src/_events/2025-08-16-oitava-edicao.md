@@ -2,22 +2,16 @@
 layout: event
 title: "8ª Edição - O seu primeiro emprego em Ruby"
 date: 2025-08-16 09:30:00 -0300
-# picture: /images/events/2025-08.jpeg
+picture: /images/events/2025-08.jpeg
 coffee_break: true
-subscription_link: https://forms.gle/hK6GsRUErUM7pkHT6
+# subscription_link: https://forms.gle/hK6GsRUErUM7pkHT6
 talks:
   - title: "Dicas Práticas Para Conquistar Seu Primeiro Salário com Ruby"
     speaker:
       name: Pedro Schmitt
       picture: /images/speakers/pedro_schmitt.jpg
-      bio: Dev @ Tucows e Criador da plataforma Acervo de Jogos
+      bio: Criador da plataforma Acervo de Jogos
       link: https://twitter.com/pedroschm
-  - title: "Exercícios de LeetCode em Grupo"
-    speaker:
-      name: Matheus Richard
-      picture: /images/speakers/matheus_richard.jpg
-      bio: Senior Developer @ thoughtbot
-      link: https://twitter.com/matheusrich
 sponsors:
   - name: ludoteca
     logo: /images/sponsors/ludoteca.png
@@ -28,7 +22,7 @@ sponsors:
   - name: thoughtbot
     logo: /images/sponsors/thoughtbot.svg
     link: https://thoughtbot.com
-# attendees: 11
+attendees: 13
 location:
   city: Brasilia, Brazil
   address: Blocks Coworking & Offices, Águas Claras, 3º andar

@@ -16,7 +16,7 @@ talks:
     speaker:
       name: Pedro Schmitt
       picture: /images/speakers/pedro_schmitt.jpg
-      bio: Dev @ Tucows e Criador da plataforma Acervo de Jogos
+      bio: Criador da plataforma Acervo de Jogos
       link: https://twitter.com/pedroschm
   - title: "The Fast Lane: Async Rails"
     speaker:
