@@ -127,7 +127,7 @@ GEM
     public_suffix (6.0.2)
     puma (7.0.4)
       nio4r (~> 2.0)
-    rack (3.2.1)
+    rack (3.2.2)
     rackup (2.2.1)
       rack (>= 3)
     rake (13.3.0)
