@@ -6,9 +6,12 @@ date: 2025-10-18 09:30:00 -0300
 # coffee_break: true
 subscription_link: https://forms.gle/xQjTd8HYwZ2eFryS6
 talks:
-  - title: "Em breve..."
+  - title: "Reimaginando o Rails: o poder do Inertia para o dev fullstack"
     speaker:
-      name: TBD
+      name: Pedro Augusto Ramalho Duarte
+      picture: /images/speakers/pedro_augusto_ramalho_duarte.jpg
+      bio: CTO @ SwitchDreams
+      link: https://github.com/PedroAugustoRamalhoDuarte
 sponsors:
   - name: GitHub
     logo: /images/sponsors/github.svg
