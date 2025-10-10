@@ -1,0 +1,108 @@
+{% comment %}
+Generate a timed agenda for an event with automatic time calculations.
+
+Parameters:
+- event: The event object with date, talks (including duration), etc.
+
+The agenda follows this pattern:
+1. Opening (10 minutes) - starts at event time
+2. Each talk (duration from metadata) 
+3. Break (10 minutes)
+4. Group discussion (remaining time until noon)
+{% endcomment %}
+
+{% assign event_timestamp = event.date | date: '%s' %}
+{% assign target_end_timestamp = event.date | date: '%Y-%m-%d' | append: ' 12:00:00 ' | append: event.date | date: '%z' | date: '%s' %}
+{% assign opening_duration_seconds = 10 | times: 60 %}
+{% assign break_duration_seconds = 10 | times: 60 %}
+
+<div class="agenda-container">
+  <ol class="event-timeline">
+    {% comment %} Opening {% endcomment %}
+    {% assign opening_start = event_timestamp %}
+    {% assign opening_end = opening_start | plus: opening_duration_seconds %}
+    <li>
+      <span>🎯</span>
+      <div>
+        <time>{{ opening_start | date: '%H:%M' }} - {{ opening_end | date: '%H:%M' }}</time>
+        <h3 class="mb-2">Abertura</h3>
+      </div>
+    </li>
+
+    {% comment %} Calculate talks timing {% endcomment %}
+    {% assign current_timestamp = opening_end %}
+    
+    {% for talk in event.talks %}
+      {% comment %} Default duration is 20 minutes if not specified {% endcomment %}
+      {% if talk.duration %}
+        {% assign talk_duration_seconds = talk.duration | times: 60 %}
+      {% else %}
+        {% assign talk_duration_seconds = 20 | times: 60 %}
+      {% endif %}
+      {% assign talk_end = current_timestamp | plus: talk_duration_seconds %}
+      
+      <li>
+        <span>💬</span>
+        <div>
+          <time>{{ current_timestamp | date: '%H:%M' }} - {{ talk_end | date: '%H:%M' }}</time>
+          <h3 class="mb-2">{{ talk.title }}</h3>
+          <div class="flex gap-4 items-center">
+            {% if talk.speaker.picture %}
+              {% assign speaker_picture = talk.speaker.picture %}
+            {% else %}
+              {% assign speaker_picture = '/images/default-avatar.webp' %}
+            {% endif %}
+
+            <img class="rounded-full" src="{{ speaker_picture | relative_url }}" alt="{{ talk.speaker.name }} picture" height=50 width=50 />
+            <div>
+              {% if talk.speaker.link %}
+                <a class="font-bold" href="{{ talk.speaker.link }}" target="_blank">{{ talk.speaker.name }}</a>
+              {% else %}
+                <p class="font-bold m-0">{{ talk.speaker.name }}</p>
+              {% endif %}
+
+              {% if talk.speaker.bio %}
+                <p class="m-0 text-secondary">{{ talk.speaker.bio }}</p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      {% comment %} Update timestamp for next item {% endcomment %}
+      {% assign current_timestamp = talk_end %}
+    {% endfor %}
+
+    {% comment %} Break {% endcomment %}
+    {% assign break_start = current_timestamp %}
+    {% assign break_end = break_start | plus: break_duration_seconds %}
+    <li>
+      <span>☕</span>
+      <div>
+        <time>{{ break_start | date: '%H:%M' }} - {{ break_end | date: '%H:%M' }}</time>
+        <h3 class="mb-2">
+          {% if event.coffee_break %}
+            Coffee Break
+          {% else %}
+            Intervalo
+          {% endif %}
+        </h3>
+      </div>
+    </li>
+
+    {% comment %} Group Discussion - fills remaining time until noon {% endcomment %}
+    <li>
+      <span>🗣️</span>
+      <div>
+        <time>{{ break_end | date: '%H:%M' }} - 12:00</time>
+        <h3 class="mb-2">Roda de Conversa</h3>
+      </div>
+    </li>
+  </ol>
+</div>
+
+{% if cfp_link %}
+  <aside class="note">
+    <p>Tem interesse em palestrar? <a class="font-bold" href="{{ cfp_link }}" target="_blank">Envie seu talk!</a></p>
+  </aside>
+{% endif %}
