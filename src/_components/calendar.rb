@@ -22,7 +22,7 @@ class Calendar < Bridgetown::Component
       address = event.data.dig(:location, :address)
       link = event.data.dig(:location, :link)
       url = event.absolute_url
-      agenda = event.data.talks.map { |talk| "- #{talk.title} (#{talk.speaker.name})" }.join("\n\n")
+      agenda = event.data.talks.filter_map { |talk| "- #{talk.title} (#{talk.speaker.name})" if talk.speaker }.join("\n\n")
       sponsors = event.data.sponsors.map(&:name).to_sentence(two_words_connector: ' e ', last_word_connector: ' e ')
 
       description = <<~DESCRIPTION
