@@ -1,0 +1,100 @@
+{% comment %}
+Generate a standalone agenda export page with styling that mimics the original image design.
+This can be used to generate images or PDFs for social media sharing.
+
+Parameters:
+- event: The event object with all metadata
+{% endcomment %}
+
+{% assign event_timestamp = event.date | date: '%s' %}
+{% assign opening_duration_seconds = 10 | times: 60 %}
+{% assign break_duration_seconds = 10 | times: 60 %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ event.title }} - Agenda</title>
+    <link rel="stylesheet" href="{{ '/frontend/styles/agenda-export.css' | relative_url }}">
+</head>
+<body>
+    <div class="agenda-export-container">
+        <div class="agenda-header-decoration"></div>
+        
+        <div class="agenda-header">
+            <div class="agenda-edition">{{ event.title | upcase }}</div>
+            <div class="agenda-ruby-logo"></div>
+            <div class="agenda-main-title">Ruby DF</div>
+        </div>
+
+        <div class="agenda-section-title">AGENDA</div>
+
+        <div class="agenda-timeline">
+            {% comment %} Opening {% endcomment %}
+            {% assign current_timestamp = event_timestamp %}
+            {% assign opening_end = current_timestamp | plus: opening_duration_seconds %}
+            
+            <div class="agenda-item">
+                <div class="agenda-time">{{ current_timestamp | date: '%H:%M' }} - {{ opening_end | date: '%H:%M' }}</div>
+                <div class="agenda-content">
+                    <h3>Abertura</h3>
+                </div>
+            </div>
+
+            {% comment %} Talks {% endcomment %}
+            {% assign current_timestamp = opening_end %}
+            {% for talk in event.talks %}
+                {% comment %} Default duration is 20 minutes if not specified {% endcomment %}
+                {% if talk.duration %}
+                    {% assign talk_duration_seconds = talk.duration | times: 60 %}
+                {% else %}
+                    {% assign talk_duration_seconds = 20 | times: 60 %}
+                {% endif %}
+                {% assign talk_end = current_timestamp | plus: talk_duration_seconds %}
+                
+                <div class="agenda-item">
+                    <div class="agenda-time">{{ current_timestamp | date: '%H:%M' }} - {{ talk_end | date: '%H:%M' }}</div>
+                    <div class="agenda-content">
+                        <h3>{{ talk.title }}</h3>
+                        <p class="agenda-speaker">com {{ talk.speaker.name }}</p>
+                    </div>
+                </div>
+                
+                {% assign current_timestamp = talk_end %}
+            {% endfor %}
+
+            {% comment %} Break {% endcomment %}
+            {% assign break_start = current_timestamp %}
+            {% assign break_end = break_start | plus: break_duration_seconds %}
+            
+            <div class="agenda-item">
+                <div class="agenda-time">{{ break_start | date: '%H:%M' }} - {{ break_end | date: '%H:%M' }}</div>
+                <div class="agenda-content">
+                    <h3>Intervalo</h3>
+                </div>
+            </div>
+
+            {% comment %} Group Discussion {% endcomment %}
+            <div class="agenda-item">
+                <div class="agenda-time">{{ break_end | date: '%H:%M' }} - 12:00</div>
+                <div class="agenda-content">
+                    <h3>Roda de Conversa</h3>
+                </div>
+            </div>
+        </div>
+
+        {% if event.sponsors and event.sponsors.size > 0 %}
+            <div class="agenda-footer">
+                <div class="agenda-sponsors-label">Patrocínio</div>
+                <div class="agenda-sponsors">
+                    {% for sponsor in event.sponsors limit: 2 %}
+                        <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.name }}" class="agenda-sponsor-logo">
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
+
+        <div class="agenda-footer-decoration"></div>
+    </div>
+</body>
+</html>
