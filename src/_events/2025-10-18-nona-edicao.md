@@ -1,8 +1,8 @@
 ---
 layout: event
-title: "9ª Edição"
+title: "9ª Edição - Componentes em Rails sem complicação"
 date: 2025-10-18 09:30:00 -0300
-# picture: /images/events/2025-08.jpeg
+picture: /images/events/2025-10.jpeg
 # coffee_break: true
 subscription_link: https://forms.gle/xQjTd8HYwZ2eFryS6
 talks:
@@ -23,7 +23,7 @@ sponsors:
   - name: thoughtbot
     logo: /images/sponsors/thoughtbot.svg
     link: https://thoughtbot.com
-# attendees: 13
+attendees: 13
 location:
   city: Brasilia, Brazil
   address: Blocks Coworking & Offices, Águas Claras, 3º andar
