@@ -3,7 +3,7 @@ layout: default
 template_engine: erb
 ---
 
-<% event = collections.events.resources.select { |e| e.date >= site.time }.min_by(&:date) %>
+<% event = nearest_future_event(collections.events.resources) %>
 
 <% if event %>
 
