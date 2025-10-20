@@ -10,7 +10,7 @@
         <a href="<%= event.relative_url %>"><%= event.data.title %></a>
       </h2>
       <time>Realizado em <%= event.data.date.strftime("%d/%m/%Y") %></time>
-      <p class="m-0 mt-2">O evento contou com <%= render "plural", word: "palestra", count: event.data.talks.size %><% if event.data.attendees %> e <%= render "plural", word: "participante", count: event.data.attendees %><% end %>.</p>
+      <p class="m-0 mt-2">O evento contou com <%= plural(event.data.talks.size, "palestra") %><% if event.data.attendees %> e <%= plural(event.data.attendees, "participante") %><% end %>.</p>
     </li>
   <% end %>
 </ol>

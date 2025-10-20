@@ -7,5 +7,9 @@ class Builders::Filters < SiteBuilder
     liquid_filter :nearest_future_event do |events|
       events.filter { _1.date >= site.time }.min_by(&:date)
     end
+
+    helper :plural do |count, word|
+      "#{count} #{word}#{count != 1 ? 's' : ''}"
+    end
   end
 end
