@@ -36,15 +36,10 @@
 <h2 id="agenda">Agenda</h2>
 
 <%
-  one_week_before_event = (event.date.to_time.to_i - 604800).to_s
-  one_week_before_event_date = Time.at(one_week_before_event.to_i).strftime('%Y-%m-%d')
-  today = Time.now.strftime('%Y-%m-%d')
+  one_week_before_event = event.date - (7 * 24 * 60 * 60)
+  today = Time.now
   
-  cfp_link = if site.metadata.cfp_link && today <= one_week_before_event_date
-    site.metadata.cfp_link
-  else
-    false
-  end
+  cfp_link = site.metadata.cfp_link if site.metadata.cfp_link && today <= one_week_before_event
 %>
 <%= render "event_agenda", event: event, cfp_link: cfp_link, site: site %>
 

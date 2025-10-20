@@ -6,8 +6,8 @@
 
 <nav>
   <ul>
-    <li><%= render "nav_link", current_url: resource.relative_url, href: "/", label: "Sobre nós" %></li>
-    <li><%= render "nav_link", current_url: resource.relative_url, href: "/events", label: "Eventos" %></li>
-    <li><%= render "nav_link", current_url: resource.relative_url, href: "/sponsoring", label: "Patrocínio" %></li>
+    <li><%= nav_link(current_url: resource.relative_url, href: "/", label: "Sobre nós") %></li>
+    <li><%= nav_link(current_url: resource.relative_url, href: "/events", label: "Eventos") %></li>
+    <li><%= nav_link(current_url: resource.relative_url, href: "/sponsoring", label: "Patrocínio") %></li>
   </ul>
 </nav>
