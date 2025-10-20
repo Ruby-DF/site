@@ -5,7 +5,7 @@
 # in the templates via {{ site.metadata.myvariable }}.
 
 title: Ruby DF
-tagline: O meetup de Ruby do Distrito Federal!
+tagline: O meetup de Ruby no Distrito Federal!
 email: hello@rubydf.com
 description: >-
   Nosso objetivo é reunir a comunidade Ruby do DF e entorno para compartilhar conhecimento, experiências e fazer networking. Venha participar!
