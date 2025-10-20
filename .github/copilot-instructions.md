@@ -9,8 +9,8 @@ This is the official website for the Ruby DF (Ruby District Federal) community i
 ## Key Technologies
 
 - **Bridgetown v2.0**: Ruby-based static site generator (primary framework)
-- **Ruby**: >= 2.7 (backend/build system)
-- **Node.js**: >= 12 (frontend tooling)
+- **Ruby**: 3.4.6 (backend/build system)
+- **Node.js**: 20 (frontend tooling)
 - **Liquid**: Template engine
 - **esbuild**: JavaScript bundler
 - **PostCSS**: CSS processing
@@ -43,8 +43,8 @@ This is the official website for the Ruby DF (Ruby District Federal) community i
 
 ### Prerequisites
 - GCC and Make
-- Ruby >= 2.7
-- Node.js >= 12
+- Ruby 3.4.6
+- Node.js 20
 - Yarn package manager
 - Bridgetown gem: `gem install bridgetown -N`
 
