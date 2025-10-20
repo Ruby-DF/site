@@ -7,10 +7,10 @@
         </svg>
       </span>
       <h2 class="text-xl m-0">
-        <a href="<%= event.relative_url %>"><%= event.title %></a>
+        <a href="<%= event.relative_url %>"><%= event.data.title %></a>
       </h2>
-      <time>Realizado em <%= event.date.strftime("%d/%m/%Y") %></time>
-      <p class="m-0 mt-2">O evento contou com <%= render "plural", word: "palestra", count: event.talks.size %><% if event.attendees %> e <%= render "plural", word: "participante", count: event.attendees %><% end %>.</p>
+      <time>Realizado em <%= event.data.date.strftime("%d/%m/%Y") %></time>
+      <p class="m-0 mt-2">O evento contou com <%= render "plural", word: "palestra", count: event.data.talks.size %><% if event.data.attendees %> e <%= render "plural", word: "participante", count: event.data.attendees %><% end %>.</p>
     </li>
   <% end %>
 </ol>
