@@ -4,7 +4,7 @@ title: "9ª Edição - Componentes em Rails sem complicação"
 date: 2025-10-18 09:30:00 -0300
 picture: /images/events/2025-10.jpeg
 # coffee_break: true
-subscription_link: https://forms.gle/xQjTd8HYwZ2eFryS6
+# subscription_link: https://forms.gle/xQjTd8HYwZ2eFryS6
 talks:
   - title: "CSS-Zero - Frontend opinativo para seu aplicativo no-build"
     speaker:
@@ -12,6 +12,7 @@ talks:
       picture: /images/speakers/lazaro_nixon.jpg
       bio: Desenvolvedor Senior na Koombea
       link: https://x.com/lazaronixon
+    embed_url: https://www.youtube.com/embed/tun5XnQnSNE?si=R9OUTG7gvvvSo5Xe
   - title: "Sorteio de brindes"
 sponsors:
   - name: GitHub

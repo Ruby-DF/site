@@ -317,3 +317,6 @@ figcaption {
 .w-fit { width: fit-content; }
 .w-full { width: 100%; }
 .h-full { height: 100%; }
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
