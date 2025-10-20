@@ -3,7 +3,7 @@ layout: null
 template_engine: erb
 ---
 
-<%= render Calendar.new(
+<%= render "calendar",
   events: collections.events.resources.sort_by(&:date),
   timezone: site.config.timezone
-) %>
+%>

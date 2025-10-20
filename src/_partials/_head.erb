@@ -1,0 +1,15 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<% resource_title = title.to_s.strip %>
+<title><% if resource_title != "Index" %><%= Bridgetown::Utils.xml_escape(resource_title) %> | <%= Bridgetown::Utils.xml_escape(metadata.title) %><% else %><%= Bridgetown::Utils.xml_escape(metadata.title) %>: <%= Bridgetown::Utils.xml_escape(metadata.tagline) %><% end %></title>
+
+<meta name="description" content="<%= metadata.description %>" />
+<%= seo %>
+
+<link rel="stylesheet" href="<%= asset_path :css %>" />
+<link rel="icon" href="<%= relative_url("/favicon.ico") %>" sizes="32x32">
+<link rel="icon" href="<%= relative_url("/icon.svg") %>" type="image/svg+xml">
+<link rel="apple-touch-icon" href="<%= relative_url("/apple-touch-icon.png") %>"><!-- 180×180 -->
+<link rel="manifest" href="<%= relative_url("/manifest.webmanifest") %>">
+<script src="<%= asset_path :js %>" defer></script>
+<%= live_reload_dev_js %>
