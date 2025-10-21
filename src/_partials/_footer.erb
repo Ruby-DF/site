@@ -1,9 +1,9 @@
 <footer>
-  <p>Dúvidas? Entre em contato por email via <a href="mailto:{{ metadata.email }}">{{ metadata.email }}</a></p>
+  <p>Dúvidas? Entre em contato por email via <a href="mailto:<%= metadata.email %>"><%= metadata.email %></a></p>
   <nav>
     <ul class="list-none p-0 flex gap-4 items-center justify-center">
       <li>
-        <a href="{{ metadata.telegram_link }}" target="_blank" rel="noopener" title="Telegram">
+        <a href="<%= metadata.telegram_link %>" target="_blank" rel="noopener" title="Telegram">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram"
             viewBox="0 0 16 16">
             <path
@@ -12,7 +12,7 @@
         </a>
       </li>
       <li>
-        <a href="{{ metadata.linkedin_link }}" target="_blank" rel="noopener" title="LinkedIn">
+        <a href="<%= metadata.linkedin_link %>" target="_blank" rel="noopener" title="LinkedIn">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
             viewBox="0 0 16 16">
             <path
@@ -21,7 +21,7 @@
         </a>
       </li>
       <li>
-        <a href="{{ metadata.github_link }}" target="_blank" rel="noopener" title="GitHub">
+        <a href="<%= metadata.github_link %>" target="_blank" rel="noopener" title="GitHub">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
             viewBox="0 0 16 16">
             <path
@@ -30,7 +30,7 @@
         </a>
       </li>
       <li>
-        <a href="{{ metadata.youtube_link }}" target="_blank" rel="noopener" title="YouTube">
+        <a href="<%= metadata.youtube_link %>" target="_blank" rel="noopener" title="YouTube">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube"
             viewBox="0 0 16 16">
             <path

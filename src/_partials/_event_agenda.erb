@@ -1,0 +1,61 @@
+<ol>
+  <% event.talks.each do |talk| %>
+    <li class="list-roman">
+      <h3 class="mt-3 mb-2"><%= talk.title %></h3>
+      <% if talk.speaker %>
+        <div class="flex gap-4 items-center">
+          <% speaker_picture = talk.speaker.picture || '/images/default-avatar.webp' %>
+
+          <img class="rounded-full" src="<%= relative_url(speaker_picture) %>" alt="<%= talk.speaker.name %> picture" height=50 width=50 />
+          <div>
+            <% if talk.speaker.link %>
+              <a class="font-bold" href="<%= talk.speaker.link %>" target="_blank"><%= talk.speaker.name %></a>
+            <% else %>
+              <p class="font-bold"><%= talk.speaker.name %></p>
+            <% end %>
+
+            <% if talk.speaker.bio || talk.slides %>
+              <p class="m-0 text-secondary">
+                <%= talk.speaker.bio %>
+
+                <% if talk.speaker.bio && talk.slides && event.date <= site.time %>
+                  |
+                <% end %>
+
+                <% if talk.slides && event.date <= site.time %>
+                  <a href="<%= talk.slides %>" target="_blank">Slides</a>
+                <% end %>
+              </p>
+            <% end %>
+          </div>
+        </div>
+
+        <% if talk.embed_url %>
+          <iframe class="block mt-2 mx-auto aspect-video" src="<%= Bridgetown::Utils.xml_escape(talk.embed_url) %>"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <% end %>
+      <% end %>
+    </li>
+  <% end %>
+
+  <li class="list-roman">
+    <h3 class="mb-2">
+      <% if event.coffee_break %>
+        Coffee Break
+      <% else %>
+        Intervalo
+      <% end %>
+    </h3>
+  </li>
+  <li class="list-roman">
+    <h3 class="mb-2">Roda de conversa</h3>
+  </li>
+</ol>
+
+<% if cfp_link %>
+  <aside class="note">
+    <p>Tem interesse em palestrar? <a class="font-bold" href="<%= cfp_link %>" target="_blank">Envie seu talk!</a></p>
+  </aside>
+<% end %>

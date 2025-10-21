@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Seja um patrocinador
+template_engine: erb
 ---
 
 # Seja um patrocinador!
@@ -180,15 +181,15 @@ investimento retorne em maior alcance e visibilidade.
   </li>
 </ul>
 
-<a class="button block w-fit mx-auto mb-8" href="mailto:{{ site.metadata.email }}" target="_blank" rel="noopener noreferrer">Enviar email</a>
+<a class="button block w-fit mx-auto mb-8" href="mailto:<%= site.metadata.email %>" target="_blank" rel="noopener noreferrer">Enviar email</a>
 
 ## Contato
 
 Interessado em patrocinar ou tirar dúvidas? Mande um email para
-<{{ site.metadata.email }}> e vamos conversar!
+<<%= site.metadata.email %>> e vamos conversar!
 
 <figure>
-  <img class="block rounded-xl max-h-80 mx-auto event-picture" src="{{ '/images/events/2023-10.jpg' | relative_url }}" alt="Meetup attendees">
+  <img class="block rounded-xl max-h-80 mx-auto event-picture" src="<%= relative_url('/images/events/2023-10.jpg') %>" alt="Meetup attendees">
   <figcaption class="text-center text-sm text-gray-600">O Ruby DF agradece qualquer tipo de apoio!</figcaption>
 </figure>
 
@@ -197,12 +198,12 @@ Interessado em patrocinar ou tirar dúvidas? Mande um email para
 Já tivemos a honra de contar com o patrocínio de empresas e pessoas incríveis.
 Abaixo, confira quem já investiu no Ruby DF:
 
-{% assign sponsors = collections.events.resources | map: "sponsors" | uniq | sort_natural: 'name' %}
+<% sponsors = collections.events.resources.flat_map { |e| e.data.sponsors }.uniq { |s| s.name }.sort_by { |s| s.name } %>
 
 <div class="flex flex-wrap items-center justify-evenly gap-8 mt-8">
-{% for sponsor in sponsors %}
-  <a href="{{ sponsor.link }}" target="_blank">
-    <img width=250 src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.name }} logo" />
+<% sponsors.each do |sponsor| %>
+  <a href="<%= sponsor.link %>" target="_blank">
+    <img width=250 src="<%= relative_url(sponsor.logo) %>" alt="<%= sponsor.name %> logo" />
   </a>
-{% endfor %}
+<% end %>
 </div>
