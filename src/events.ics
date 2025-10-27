@@ -2,7 +2,9 @@
 layout: null
 template_engine: erb
 ---
-
+<%
+require_relative "_partials/calendar"
+%>
 <%= render Calendar.new(
   events: collections.events.resources.sort_by(&:date),
   timezone: site.config.timezone

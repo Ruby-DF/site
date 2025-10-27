@@ -1,5 +1,5 @@
 <ol class="event-timeline w-fit mx-auto" reversed>
-  {% for event in events %}
+  <% events.each do |event| %>
     <li>
       <span aria-hidden>
         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" viewBox="0 0 16 16">
@@ -7,9 +7,10 @@
         </svg>
       </span>
       <h2 class="text-xl m-0">
-        <a href="{{ event.relative_url }}">{{ event.title }}</a>
+        <a href="<%= event.relative_url %>"><%= event.data.title %></a>
       </h2>
-      <time>Realizado em {{ event.date | date: "%d/%m/%Y" }}</time>
-      <p class="m-0 mt-2">O evento contou com {% render "plural", word: "palestra", count: event.talks.size %}{% if event.attendees %} e {% render "plural", word: "participante", count: event.attendees %}{% endif %}.</p> </li>
-  {% endfor %}
+      <time>Realizado em <%= event.data.date.strftime("%d/%m/%Y") %></time>
+      <p class="m-0 mt-2">O evento contou com <%= plural(event.data.talks.size, "palestra") %><% if event.data.attendees %> e <%= plural(event.data.attendees, "participante") %><% end %>.</p>
+    </li>
+  <% end %>
 </ol>
