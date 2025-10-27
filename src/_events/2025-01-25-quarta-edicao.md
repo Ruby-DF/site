@@ -10,7 +10,7 @@ talks:
       picture: /images/speakers/jose_augusto.jpg
       bio: Programador Backend e Security Champion na Conviso application security
       link: https://www.linkedin.com/in/joseaugustodev
-  - title: "Aplicação com rails e Blockchain, quais desafios e como resolvê-los"
+  - title: "Aplicação com Rails e Blockchain: quais os desafios e como resolvê-los"
     speaker:
       name: Thiago Ribeiro
       picture: /images/speakers/thiago_ribeiro.jpg
