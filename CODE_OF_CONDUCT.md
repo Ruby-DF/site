@@ -1,6 +1,6 @@
 # Diretrizes de Conduta da Comunidade Ruby
 
-Este documento fornece diretrizes comunitárias para um espaço seguro, respeitoso, produtivo e colaborativo para qualquer pessoa que deseje contribuir com a comunidade Ruby. Ele se aplica a todos os "espaços colaborativos", que são definidos como canais de comunicação da comunidade (como listas de discussão, patches enviados, comentários de commits, etc.).
+O Ruby DF segue [as diretrizes de conduta do Ruby](https://www.ruby-lang.org/en/conduct/) em todos os espaços colaborativos, como listas de discussão, patches enviados, comentários de commits, e eventos presenciais:
 
 - Os participantes serão tolerantes com pontos de vista opostos.
 - Os participantes devem garantir que sua linguagem e ações estejam livres de ataques pessoais e comentários pessoais depreciativos.
