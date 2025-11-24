@@ -17,11 +17,11 @@ template_engine: erb
   <h1 class="mb-8">🎉 Faltam <%= days_until_event %> dias para o próximo meetup!</h1>
 
   <div class="w-full inline-flex justify-center mb-4">
-    <% if event.subscription_link %>
+    <% if event.data.subscription_link %>
       <div class="flex flex-col gap-2 items-center">
       <p class="m-0">As vagas são limitadas. Garanta a sua!</p>
 
-      <a class="button w-fit" href="<%= event.subscription_link %>">Inscreva-se!</a>
+      <a class="button w-fit" href="<%= event.data.subscription_link %>">Inscreva-se!</a>
       </div>
     <% else %>
       <p class="m-0">Não é necessário se increver para participar. Só chegar no horário! 😉</p>
@@ -29,7 +29,7 @@ template_engine: erb
   </div>
 <% end %>
 
-<%= render "event_description", event: event, site: site %>
+<%= render "event_description", event: event.data, site: site %>
 
 <% else %>
 
