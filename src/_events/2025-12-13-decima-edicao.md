@@ -4,7 +4,7 @@ title: "10ª Edição - Jogos com Ruby & Comemoração de Fim de Ano"
 date: 2025-12-13 09:30:00 -0300
 # picture: /images/events/2025-10.jpeg
 coffee_break: true
-subscription_link: ""
+subscription_link: "https://forms.gle/DiW7WRvL3oeFKfnc8"
 talks:
   - title: "Introdução ao Desenvolvimento de Jogos com Ruby"
     speaker:
