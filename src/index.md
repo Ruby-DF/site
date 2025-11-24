@@ -74,4 +74,6 @@ contato conosco pelo email <<%= site.metadata.email %>> para mais informações.
 
 ## Organização
 
-O Ruby DF é organizado por [Matheus Richard](https://twitter.com/matheusrich) e acontece por volta de uma vez por bimestre.
+O Ruby DF é organizado por [Matheus Richard](https://twitter.com/matheusrich) e
+acontece por volta de uma vez por bimestre. Você pode assistir as gravações das
+edições passadas no nosso [canal no YouTube](<%= site.metadata.youtube_link %>).
