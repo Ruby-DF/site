@@ -2,7 +2,7 @@
 layout: event
 title: "10ª Edição - Jogos com Ruby & Comemoração de Fim de Ano"
 date: 2025-12-13 09:30:00 -0300
-# picture: /images/events/2025-10.jpeg
+picture: /images/events/2025-12.jpeg
 coffee_break: true
 subscription_link: "https://forms.gle/DiW7WRvL3oeFKfnc8"
 talks:
@@ -24,7 +24,7 @@ sponsors:
   - name: thoughtbot
     logo: /images/sponsors/thoughtbot.svg
     link: https://thoughtbot.com
-# attendees: 13
+attendees: 13
 location:
   city: Brasilia, Brazil
   address: Blocks Coworking & Offices, Águas Claras, 3º andar
