@@ -1,3 +1,5 @@
+require "active_support/core_ext/array/conversions"
+
 Bridgetown.configure do |config|
   # You can configure aspects of your Bridgetown site here instead of using
   # `bridgetown.config.yml`. For example:
