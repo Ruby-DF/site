@@ -14,7 +14,7 @@
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^16.1.1",
     "postcss-load-config": "^4.0.1",
-    "postcss-preset-env": "^9.1.2",
+    "postcss-preset-env": "^10.4.0",
     "read-cache": "^1.0.0"
   },
   "dependencies": {}
