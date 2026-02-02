@@ -6,12 +6,11 @@ subscription_link: "https://forms.gle/P4M63PncCFSwRrPx5"
 # picture: /images/events/2026-02.jpeg
 # coffee_break: true
 talks:
-  - title: "A definir"
+  - title: "Hackeando Kindles com Ruby"
     speaker:
-      name: TDB
-  #     picture: /images/speakers/matheus_richard.jpg
-  #     bio: Senior Developer @ thoughtbot
-  #     link: https://twitter.com/matheusrich
+      name: Joás Cabral
+      bio: dev @ armadilha.org
+      link: https://bsky.app/profile/maltexto.armadilha.org
     # embed_url: https://www.youtube.com/embed/rFahd2DzXxI?si=Wr4Cv7Xl9CmtYzka
 sponsors:
   - name: thoughtbot
