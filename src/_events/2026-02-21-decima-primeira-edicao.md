@@ -1,9 +1,9 @@
 ---
 layout: event
-title: "11ª Edição"
+title: "11ª Edição - Hackeando Kindles com Ruby"
 date: 2026-02-21 09:30:00 -0300
-subscription_link: "https://forms.gle/P4M63PncCFSwRrPx5"
-# picture: /images/events/2026-02.jpeg
+# subscription_link: "https://forms.gle/P4M63PncCFSwRrPx5"
+picture: /images/events/2026-02.jpg
 # coffee_break: true
 talks:
   - title: "Hackeando Kindles com Ruby"
@@ -16,7 +16,7 @@ sponsors:
   - name: thoughtbot
     logo: /images/sponsors/thoughtbot.svg
     link: https://thoughtbot.com
-# attendees: 13
+attendees: 8
 location:
   city: Brasilia, Brazil
   address: Blocks Coworking & Offices, Águas Claras, 3º andar
