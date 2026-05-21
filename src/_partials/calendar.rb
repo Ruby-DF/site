@@ -41,7 +41,7 @@ class Calendar < Bridgetown::Component
 
       calendar.event do |e|
         e.dtstart     = ical_time(datetime)
-        e.dtend       = ical_time(datetime + 2.hours)
+        e.dtend       = ical_time(datetime + 3.hours)
         e.summary     = "Ruby DF - #{title}"
         e.location    = city
         e.url         = url
