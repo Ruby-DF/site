@@ -12,7 +12,7 @@
     "glob": "^13.0.6",
     "postcss": "^8.5.19",
     "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-import": "^16.1.1",
+    "postcss-import": "^16.2.0",
     "postcss-load-config": "^6.0.1",
     "postcss-preset-env": "^11.3.2",
     "read-cache": "^1.0.0"
