@@ -102,11 +102,10 @@ GEM
     hash_with_dot_access (2.2.0)
     i18n (1.15.2)
       concurrent-ruby (~> 1.0)
-    icalendar (2.12.5)
+    icalendar (2.13.0)
       base64
       ice_cube (~> 0.16)
       logger
-      ostruct
     ice_cube (0.17.0)
     inclusive (1.1.0)
     io-console (0.9.2)
@@ -133,7 +132,6 @@ GEM
     net-http (0.9.1)
       uri (>= 0.11.1)
     nio4r (2.7.5)
-    ostruct (0.6.3)
     pp (0.6.4)
       prettyprint
     prettyprint (0.2.0)
@@ -200,7 +198,7 @@ DEPENDENCIES
   activesupport
   bridgetown (~> 2.2)
   bridgetown-seo-tag (~> 7.0)
-  icalendar (~> 2.12)
+  icalendar (~> 2.13)
   puma (< 9)
   tzinfo (~> 2.0)
 
